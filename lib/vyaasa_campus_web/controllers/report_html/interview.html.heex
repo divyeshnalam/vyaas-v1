@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Interactive Session Report</title>
+    <style><%= raw(common_styles()) %></style>
+    <style>
+      .question {
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 10px 12px;
+        margin-bottom: 8px;
+        background: #f9fafb;
+        page-break-inside: avoid;
+      }
+      .question .q {
+        font-weight: 600;
+        color: #111827;
+        font-size: 10pt;
+      }
+      .question .score-chip {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 6px;
+        font-size: 8.5pt;
+        font-weight: 700;
+        margin-left: 6px;
+      }
+      .question .transcript {
+        font-size: 9.5pt;
+        color: #374151;
+        margin-top: 6px;
+        line-height: 1.5;
+        background: #ffffff;
+        padding: 6px 8px;
+        border-radius: 6px;
+        border: 1px dashed #e5e7eb;
+      }
+      .question .feedback {
+        font-size: 9pt;
+        color: #4b5563;
+        margin-top: 6px;
+        line-height: 1.5;
+      }
+      .question .feedback strong { color: #111827; }
+      .report-text {
+        font-size: 10pt;
+        line-height: 1.55;
+        color: #374151;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="report">
+      <.report_watermark watermark_src={@watermark_src} />
+      <.report_header logo_src={@logo_src} student={@student} generated_at_display={@generated_at_display} />
+
+      <section class="title-block">
+        <div>
+          <h1>Interactive Session Report</h1>
+          <p>Generated for {@candidate_name}</p>
+        </div>
+        <span
+          class="badge"
+          style={"background: #{tint_hex(@performance_color)}; color: #{color_hex(@performance_color)};"}
+        >
+          {@performance_label}
+        </span>
+      </section>
+
+      <section class="card">
+        <h3>Overall Score</h3>
+        <div class="score-hero">
+          <div class="gauge">
+            <svg width="130" height="130" viewBox="0 0 130 130">
+              <circle cx="65" cy="65" r="55" stroke="#e5e7eb" stroke-width="10" fill="none" />
+              <circle
+                cx="65"
+                cy="65"
+                r="55"
+                stroke={color_hex(@performance_color)}
+                stroke-width="10"
+                fill="none"
+                stroke-linecap="round"
+                stroke-dasharray={Float.round(2 * 3.14159 * 55, 2)}
+                stroke-dashoffset={Float.round(2 * 3.14159 * 55 * (1 - clamp_pct(@overall_score) / 100), 2)}
+              />
+            </svg>
+            <div class="center">
+              <div class="score">{safe_round(@overall_score)}<small style="font-size: 9pt; color: #6b7280; font-weight: 500;">/100</small></div>
+              <div class="label">Score</div>
+            </div>
+          </div>
+          <div class="score-summary">
+            <div class="pct" style={"color: #{color_hex(@performance_color)};"}>
+              {safe_round(@overall_score)}%
+            </div>
+            <div class="verdict" style={"color: #{color_hex(@performance_color)};"}>
+              {@performance_label}
+            </div>
+            <div class="sub">
+              Completed {@questions_completed} of {length(@questions)} questions
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Competency Scores</h3>
+        <div :for={{label, val, weight} <- @competency} style="margin-bottom: 12px;">
+          <div style="display:flex;justify-content:space-between;font-size:10pt;margin-bottom:4px;">
+            <span>{label} <span :if={weight != ""} style="color:#94a3b8;font-size:9pt;">({weight})</span></span>
+            <span style="font-weight:700;color:#111827;">{safe_round(val)} / 100</span>
+          </div>
+          <div style="background:#e5e7eb;border-radius:9999px;height:7px;overflow:hidden;">
+            <span style={"display:block;height:100%;border-radius:9999px;background:#{color_hex(@performance_color)};width:#{safe_round(val)}%;"}></span>
+          </div>
+        </div>
+      </section>
+
+      <section :if={@summary_text && @summary_text != ""} class="card">
+        <h3>Summary</h3>
+        <div class="report-text">{@summary_text}</div>
+      </section>
+
+      <section :if={@strengths != [] or @improvements != []} class="card">
+        <div class="grid-2">
+          <div>
+            <h4 class="section">Strengths</h4>
+            <ul class="tight">
+              <li :for={s <- @strengths}>{s}</li>
+              <li :if={@strengths == []} style="color: #9ca3af;">—</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="section">Areas to Improve</h4>
+            <ul class="tight">
+              <li :for={i <- @improvements}>{i}</li>
+              <li :if={@improvements == []} style="color: #9ca3af;">—</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <.report_footer generated_at_display={@generated_at_display} />
+    </div>
+  </body>
+</html>

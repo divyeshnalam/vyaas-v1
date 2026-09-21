@@ -1,0 +1,5402 @@
+[
+{
+"id": "ext_si_b_p1",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "base",
+"keyed": "positive",
+"text": "Reaching out to start a conversation comes more easily to me than waiting for one to come to me.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_si_b_p2",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "base",
+"keyed": "positive",
+"text": "Beginning interactions with people I have just met is something I do without much hesitation.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_si_b_p3",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "base",
+"keyed": "positive",
+"text": "Suggesting that people get together is something I do more often than waiting for the suggestion.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_si_b_p4",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "base",
+"keyed": "positive",
+"text": "Making the first move in a social exchange feels natural to me, even when no one expects it.",
+"technique": "cognitive_tension"
+},
+{
+"id": "ext_si_b_n1",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "base",
+"keyed": "negative",
+"text": "Waiting for others to begin an interaction tends to feel more comfortable to me than starting one myself.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_si_b_n2",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "base",
+"keyed": "negative",
+"text": "Starting conversations with unfamiliar people is something I usually delay.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_si_b_n3",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "base",
+"keyed": "negative",
+"text": "Letting other people open the conversation is what I usually fall into in unfamiliar groups.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_si_b_n4",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "base",
+"keyed": "negative",
+"text": "Walking up to people I have not met is something I do only when there is a specific reason for it.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_si_s_p1",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a group falls quiet, I tend to be the one who reopens the conversation.",
+"technique": "situational"
+},
+{
+"id": "ext_si_s_p2",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I notice someone standing apart at a gathering, I usually go over to include them.",
+"technique": "situational"
+},
+{
+"id": "ext_si_s_p3",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When new people enter a setting I am part of, I make a point of introducing myself early.",
+"technique": "situational"
+},
+{
+"id": "ext_si_s_p4",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a small group is forming, I tend to be among the first to join it.",
+"technique": "situational"
+},
+{
+"id": "ext_si_s_n1",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a conversation in a group lulls, I generally wait for someone else to restart it.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_si_s_n2",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I enter a room of unfamiliar people, I usually settle in before engaging anyone.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_si_s_n3",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I see someone new in a familiar setting, I tend to let them approach first.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_si_s_n4",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When small groups are forming around me, I often wait to be drawn in rather than join.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_si_st_p1",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when I am the newest person present, I introduce myself rather than wait to be noticed.",
+"technique": "stakes"
+},
+{
+"id": "ext_si_st_p2",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When most people in a setting outrank me in some way, I still tend to start conversations.",
+"technique": "stakes"
+},
+{
+"id": "ext_si_st_p3",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Walking up to someone whose attention I need, while others are watching, is something I do without rehearsing it first.",
+"technique": "cognitive_tension"
+},
+{
+"id": "ext_si_st_p4",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When something matters enough to discuss, I bring it to the relevant person directly instead of waiting for the right moment to come around.",
+"technique": "stakes"
+},
+{
+"id": "ext_si_st_n1",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When most people in a setting outrank me in some way, I tend to let them initiate any exchange.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_si_st_n2",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Approaching someone with influence is something I postpone until the situation forces it.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_si_st_n3",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When others are watching, I become less likely to be the first to start a conversation.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_si_st_n4",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Initiating contact in higher-visibility settings is something I prefer to leave to others.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_si_e_p1",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between waiting for an introduction and making one myself, I tend to make it.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_si_e_p2",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between staying quiet in an unfamiliar group and being the first to speak, I usually choose to speak.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_si_e_p3",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "edge",
+"keyed": "positive",
+"text": "When a group is sitting in awkward silence and someone needs to break it, I am usually the person who does.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_si_e_n1",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between starting a conversation and waiting to see who else does, I generally choose to wait.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "ext_si_e_n2",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "edge",
+"keyed": "negative",
+"text": "When the moment calls for someone to break a silence, I would rather it not be me.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "ext_si_e_n3",
+"trait": "Extraversion",
+"theme": "social_initiative",
+"depth": "edge",
+"keyed": "negative",
+"text": "If I have to choose between approaching someone first or letting an opportunity pass, I often let it pass.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "ext_av_b_p1",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "base",
+"keyed": "positive",
+"text": "Voicing my view in a discussion comes naturally to me, even when I am uncertain how it will be received.",
+"technique": "cognitive_tension"
+},
+{
+"id": "ext_av_b_p2",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "base",
+"keyed": "positive",
+"text": "Making my position clear is something I do without softening it more than necessary.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_av_b_p3",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "base",
+"keyed": "positive",
+"text": "Stating what I think tends to come more readily to me than holding it back.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_av_b_p4",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "base",
+"keyed": "positive",
+"text": "Speaking up when I disagree is something I do without much internal debate.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_av_b_n1",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "base",
+"keyed": "negative",
+"text": "Holding back what I think is something I do more often than expressing it openly.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_av_b_n2",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "base",
+"keyed": "negative",
+"text": "Saying what I disagree with usually requires more deliberation than agreeing does.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_av_b_n3",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "base",
+"keyed": "negative",
+"text": "Putting forward a view that might not land well with the room is something I usually hold back on.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_av_b_n4",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "base",
+"keyed": "negative",
+"text": "When a comment in a discussion does not sit right with me, pushing back on it feels harder than just letting it pass.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_av_s_p1",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a group reaches a conclusion I disagree with, I tend to say so before they move on.",
+"technique": "situational"
+},
+{
+"id": "ext_av_s_p2",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When someone misrepresents what I said, I correct it directly rather than letting it stand.",
+"technique": "situational"
+},
+{
+"id": "ext_av_s_p3",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a point I think matters is missing from a discussion, I introduce it myself.",
+"technique": "situational"
+},
+{
+"id": "ext_av_s_p4",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When asked for my opinion in a group, I give it directly rather than deferring.",
+"technique": "situational"
+},
+{
+"id": "ext_av_s_n1",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a group reaches a conclusion I disagree with, I tend to keep my objection to myself.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_av_s_n2",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When someone misrepresents what I said, I usually let it go rather than correct them.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_av_s_n3",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a missing point would shift a discussion, I prefer someone else to raise it.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_av_s_n4",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When asked my opinion in a group, I tend to soften it to fit what others have said.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_av_st_p1",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Pushing back on the view of someone more senior than me is something I will do when I have a substantive reason for it.",
+"technique": "stakes"
+},
+{
+"id": "ext_av_st_p2",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Whether the room is two people or twenty, my willingness to disagree out loud does not really shift.",
+"technique": "stakes"
+},
+{
+"id": "ext_av_st_p3",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When my view is the minority position, I still state it as clearly as I would otherwise.",
+"technique": "cognitive_tension"
+},
+{
+"id": "ext_av_st_p4",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Raising a concern I know will be unwelcome is something I tend to do in the moment, rather than wait for a softer time to bring it up.",
+"technique": "stakes"
+},
+{
+"id": "ext_av_st_n1",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Disagreeing with someone senior is something I tend to do indirectly, if at all.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_av_st_n2",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When my view is the minority position, I usually state it more cautiously than I otherwise would.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_av_st_n3",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "stakes",
+"keyed": "negative",
+"text": "In larger groups, I am more likely to keep a contrary view to myself.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_av_st_n4",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Raising an unwelcome point is something I delay until conditions feel safer.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_av_e_p1",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between voicing a disagreement and going along with the group, I tend to voice it.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_av_e_p2",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "edge",
+"keyed": "positive",
+"text": "When holding back would be smoother but staying silent would feel dishonest, I speak.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_av_e_p3",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between fitting in and saying what I think, I usually say what I think.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_av_e_n1",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between voicing a disagreement and going along with the group, I tend to go along.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "ext_av_e_n2",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "edge",
+"keyed": "negative",
+"text": "When speaking up would be honest but uncomfortable, I usually choose comfort.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "ext_av_e_n3",
+"trait": "Extraversion",
+"theme": "assertive_voice",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between holding my position and easing the room, I tend to ease the room.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "ext_se_b_p1",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "base",
+"keyed": "positive",
+"text": "Spending time around other people tends to leave me with more energy than I started with.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_se_b_p2",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "base",
+"keyed": "positive",
+"text": "Long stretches of interaction with others usually feel sustaining rather than draining.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_se_b_p3",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "base",
+"keyed": "positive",
+"text": "Time spent in groups of people is something I tend to seek out, not something I have to recover from afterward.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_se_b_p4",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "base",
+"keyed": "positive",
+"text": "After a long day spent around other people, I am usually still up for more company in the evening.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_se_b_n1",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "base",
+"keyed": "negative",
+"text": "Extended time around other people tends to leave me needing time alone to reset.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_se_b_n2",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "base",
+"keyed": "negative",
+"text": "After several social exchanges, I notice my engagement starting to slip.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_se_b_n3",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "base",
+"keyed": "negative",
+"text": "Recovering from time in groups usually requires more solitude than I expected.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_se_b_n4",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "base",
+"keyed": "negative",
+"text": "I find I have a limited amount of energy for sustained interaction in a day.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_se_s_p1",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When an evening with others runs longer than planned, I am usually still in good form.",
+"technique": "situational"
+},
+{
+"id": "ext_se_s_p2",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a gathering keeps growing, my engagement tends to grow with it.",
+"technique": "situational"
+},
+{
+"id": "ext_se_s_p3",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When the next plan involves another group, I am usually ready rather than reluctant.",
+"technique": "situational"
+},
+{
+"id": "ext_se_s_p4",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When invited to back-to-back social activities, I tend to take both.",
+"technique": "situational"
+},
+{
+"id": "ext_se_s_n1",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When an evening with others runs longer than planned, I notice my participation thinning.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_se_s_n2",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a gathering keeps growing, I tend to look for a quieter corner.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_se_s_n3",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When the next plan involves another group, I usually start looking for a way to step out.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_se_s_n4",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When invited to back-to-back social activities, I tend to choose only one.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_se_st_p1",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even after a draining day, an unexpected social plan is something I will usually accept.",
+"technique": "cognitive_tension"
+},
+{
+"id": "ext_se_st_p2",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the situation requires being engaged for hours, I find I can sustain that without much loss.",
+"technique": "stakes"
+},
+{
+"id": "ext_se_st_p3",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Carrying conversation across an event that runs for several hours is something I can do without my engagement noticeably dropping.",
+"technique": "stakes"
+},
+{
+"id": "ext_se_st_p4",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When a social situation is high-engagement and runs longer than expected, my presence in the room tends to hold up rather than fade.",
+"technique": "stakes"
+},
+{
+"id": "ext_se_st_n1",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "stakes",
+"keyed": "negative",
+"text": "After a demanding day, an unexpected social plan is something I usually decline.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_se_st_n2",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the situation requires being engaged for hours, my engagement tends to fall off as time passes.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_se_st_n3",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Carrying conversation across a long, demanding event is something I find depleting.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_se_st_n4",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When a high-engagement situation runs long, I notice myself withdrawing toward the end.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_se_e_p1",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between a quiet night alone and an unplanned evening with others, I usually choose the evening with others.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_se_e_p2",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the option to extend a gathering or end it, I tend to extend.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_se_e_p3",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between leaving early to recharge and staying longer to be present, I usually stay.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_se_e_n1",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between a quiet night alone and an unplanned evening with others, I usually choose the night alone.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "ext_se_e_n2",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the option to extend a gathering or end it, I tend to end it.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "ext_se_e_n3",
+"trait": "Extraversion",
+"theme": "social_energy",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between leaving early to recharge and staying longer to be present, I usually leave.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "ext_ew_b_p1",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "base",
+"keyed": "positive",
+"text": "Showing that I am pleased to see someone is something I do openly rather than reservedly.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_ew_b_p2",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "base",
+"keyed": "positive",
+"text": "Bringing visible energy into an interaction is something I do without consciously deciding to.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_ew_b_p3",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "base",
+"keyed": "positive",
+"text": "Expressing positive feelings toward people I like is something I do regularly.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_ew_b_p4",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "base",
+"keyed": "positive",
+"text": "Letting my interest in someone or something show on my face is more natural to me than keeping it masked.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "ext_ew_b_n1",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "base",
+"keyed": "negative",
+"text": "Showing my pleasure at seeing someone is something I tend to keep restrained.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_ew_b_n2",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "base",
+"keyed": "negative",
+"text": "Bringing visible energy into an interaction is something I usually leave to others.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_ew_b_n3",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "base",
+"keyed": "negative",
+"text": "Expressing positive feelings toward people directly is something I find awkward to do.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_ew_b_n4",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "base",
+"keyed": "negative",
+"text": "Keeping my reactions even-toned is more natural to me than showing them outwardly.",
+"technique": "subtle_reverse"
+},
+{
+"id": "ext_ew_s_p1",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When greeting someone I have not seen in a while, my reaction is usually visible to them.",
+"technique": "situational"
+},
+{
+"id": "ext_ew_s_p2",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When something good happens to a friend, my response is openly shown rather than internal.",
+"technique": "situational"
+},
+{
+"id": "ext_ew_s_p3",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When someone shares news they are excited about, I match their energy rather than tempering it.",
+"technique": "situational"
+},
+{
+"id": "ext_ew_s_p4",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When meeting someone again after time apart, I express that I am glad to see them.",
+"technique": "situational"
+},
+{
+"id": "ext_ew_s_n1",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When greeting someone I have not seen in a while, my reaction tends to be more measured than enthusiastic.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_ew_s_n2",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When something good happens to a friend, I share it more quietly than openly.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_ew_s_n3",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When someone shares exciting news, my response stays calmer than theirs.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_ew_s_n4",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When meeting someone again after time apart, I let the warmth show more in words than in expression.",
+"technique": "situational_reverse"
+},
+{
+"id": "ext_ew_st_p1",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When a setting is reserved or formal, I still bring noticeable warmth to my interactions.",
+"technique": "cognitive_tension"
+},
+{
+"id": "ext_ew_st_p2",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Showing genuine enthusiasm in front of people I do not know well is something I am comfortable doing.",
+"technique": "stakes"
+},
+{
+"id": "ext_ew_st_p3",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the people around me are being more reserved, I do not pull my own warmth back to fit the tone of the room.",
+"technique": "stakes"
+},
+{
+"id": "ext_ew_st_p4",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even in settings where I am being assessed or observed, the warmth I feel toward people stays visible in how I act.",
+"technique": "stakes"
+},
+{
+"id": "ext_ew_st_n1",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When a setting is reserved or formal, I match the room and pull my warmth back.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_ew_st_n2",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Showing visible enthusiasm in front of people I do not know well is something I tend to hold back.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_ew_st_n3",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When others are being restrained, I tend to bring my own expression down to match.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_ew_st_n4",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "stakes",
+"keyed": "negative",
+"text": "In evaluative settings, my warmth toward people becomes harder to read.",
+"technique": "stakes_reverse"
+},
+{
+"id": "ext_ew_e_p1",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between expressing warmth openly and staying composed, I tend to express it.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_ew_e_p2",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between toning down my enthusiasm and letting it show, I usually let it show.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_ew_e_p3",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "edge",
+"keyed": "positive",
+"text": "When showing affection might feel out of step with the room, I show it anyway.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "ext_ew_e_n1",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between expressing warmth openly and staying composed, I tend to stay composed.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "ext_ew_e_n2",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between toning down my enthusiasm and letting it show, I usually tone it down.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "ext_ew_e_n3",
+"trait": "Extraversion",
+"theme": "enthusiasm_warmth",
+"depth": "edge",
+"keyed": "negative",
+"text": "When showing affection might feel out of step with the room, I tend to hold back.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_ho_b_p1",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "base",
+"keyed": "positive",
+"text": "Adjusting my own plans to support someone I am working with is something I do without much hesitation.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_ho_b_p2",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "base",
+"keyed": "positive",
+"text": "Going out of my way to help someone, even in small ways, is something I tend to do across an ordinary day.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_ho_b_p3",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "base",
+"keyed": "positive",
+"text": "Putting another person's need ahead of my own is something I do more often than not.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_ho_b_p4",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "base",
+"keyed": "positive",
+"text": "Noticing that someone is struggling and stepping in before they ask is something I do as a matter of course.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_ho_b_n1",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "base",
+"keyed": "negative",
+"text": "Adjusting my own plans to help someone else is something I weigh carefully before doing.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_ho_b_n2",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "base",
+"keyed": "negative",
+"text": "Going out of my way for others tends to happen only when I have the spare capacity.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_ho_b_n3",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "base",
+"keyed": "negative",
+"text": "Putting another person's need ahead of my own is something I do selectively.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_ho_b_n4",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "base",
+"keyed": "negative",
+"text": "Offering help before being asked is something I tend to avoid in case it is unwanted.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_ho_s_p1",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When someone I am working with is struggling, I tend to shift my own priorities to help them through it.",
+"technique": "situational"
+},
+{
+"id": "agr_ho_s_p2",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When someone seems stuck on a problem, I usually step in even when I have my own things pending.",
+"technique": "situational"
+},
+{
+"id": "agr_ho_s_p3",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When help is needed and I can provide it, I rarely wait to be asked.",
+"technique": "situational"
+},
+{
+"id": "agr_ho_s_p4",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When someone is overloaded around me, I tend to take some of the weight without needing to be asked.",
+"technique": "situational"
+},
+{
+"id": "agr_ho_s_n1",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When someone I am working with is struggling, I generally finish my own priorities before helping them.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_ho_s_n2",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When someone seems stuck, I usually wait to see if they ask before stepping in.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_ho_s_n3",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When help is needed, I prefer to wait until I am clearly invited.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_ho_s_n4",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When someone is overloaded around me, I tend to focus on my own things unless asked.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_ho_st_p1",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When helping someone will set my own deadlines back, I still tend to help.",
+"technique": "cognitive_tension"
+},
+{
+"id": "agr_ho_st_p2",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When my own plans are tight, I will still make space to support someone who needs it.",
+"technique": "stakes"
+},
+{
+"id": "agr_ho_st_p3",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When helping someone will cost me time, energy, or convenience, I am still usually inclined to do it.",
+"technique": "stakes"
+},
+{
+"id": "agr_ho_st_p4",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when the help I have offered goes unnoticed or unrecognized, I tend to keep extending it the next time.",
+"technique": "stakes"
+},
+{
+"id": "agr_ho_st_n1",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When helping someone will set my own deadlines back, I tend to protect my own work first.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_ho_st_n2",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When my plans are tight, I am less likely to take on helping someone else.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_ho_st_n3",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the cost of helping is significant, I am more likely to step back.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_ho_st_n4",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the help I offer goes unrecognized, I become less willing to extend it.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_ho_e_p1",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between protecting my own time and supporting someone in need, I tend to support.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_ho_e_p2",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between meeting my own goals and helping someone meet theirs, I often help with theirs.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_ho_e_p3",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "edge",
+"keyed": "positive",
+"text": "When my needs and someone else's collide, I more often shift than hold my ground.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_ho_e_n1",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between protecting my own time and supporting someone in need, I tend to protect my time.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_ho_e_n2",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between meeting my own goals and helping someone meet theirs, I prioritize my own.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_ho_e_n3",
+"trait": "Agreeableness",
+"theme": "helping_others",
+"depth": "edge",
+"keyed": "negative",
+"text": "When my needs and someone else's collide, I more often hold my ground than shift.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_pt_b_p1",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "base",
+"keyed": "positive",
+"text": "Trying to understand the reasoning behind someone's actions is something I do before forming a judgment.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_pt_b_p2",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "base",
+"keyed": "positive",
+"text": "Picturing how a situation looks from someone else's side of it tends to come naturally to me.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_pt_b_p3",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "base",
+"keyed": "positive",
+"text": "Sitting with another person's view of a situation is something I tend to do before settling on my own.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_pt_b_p4",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "base",
+"keyed": "positive",
+"text": "Acknowledging the logic in views I disagree with is something I do as a matter of course.",
+"technique": "cognitive_tension"
+},
+{
+"id": "agr_pt_b_n1",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "base",
+"keyed": "negative",
+"text": "Forming a judgment first and revising it later is closer to how I actually work.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_pt_b_n2",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "base",
+"keyed": "negative",
+"text": "Considering another person's view tends to come after I have set my own.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_pt_b_n3",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "base",
+"keyed": "negative",
+"text": "Spending time imagining someone else's reasoning is something I rarely prioritize.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_pt_b_n4",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "base",
+"keyed": "negative",
+"text": "Acknowledging the logic in views I disagree with is not something that comes easily to me.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_pt_s_p1",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a disagreement arises, I tend to ask what the other person is seeing before I respond.",
+"technique": "situational"
+},
+{
+"id": "agr_pt_s_p2",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When someone reacts in a way I did not expect, my first move is to look for the reason.",
+"technique": "situational"
+},
+{
+"id": "agr_pt_s_p3",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I disagree with a position, I try to identify what makes it reasonable to the person holding it.",
+"technique": "situational"
+},
+{
+"id": "agr_pt_s_p4",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a conversation becomes tense, I look for the underlying view before reacting to the surface.",
+"technique": "situational"
+},
+{
+"id": "agr_pt_s_n1",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a disagreement arises, I tend to make my case before exploring the other person's.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_pt_s_n2",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When someone reacts in a way I did not expect, my first move is to defend my own position.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_pt_s_n3",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I disagree with a position, I focus more on its weaknesses than on what makes it reasonable.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_pt_s_n4",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a conversation becomes tense, I usually respond to what is said rather than what underlies it.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_pt_st_p1",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when I am sure of my view, I make room for someone else's reasoning.",
+"technique": "cognitive_tension"
+},
+{
+"id": "agr_pt_st_p2",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When time is short, I still try to understand the other side before moving forward.",
+"technique": "stakes"
+},
+{
+"id": "agr_pt_st_p3",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Considering the opposing view is something I do even when it slows me down.",
+"technique": "stakes"
+},
+{
+"id": "agr_pt_st_p4",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When a conversation gets emotional, I still try to read what the situation looks like from the other person's side of it.",
+"technique": "stakes"
+},
+{
+"id": "agr_pt_st_n1",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When I am sure of my view, I am less likely to make room for someone else's.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_pt_st_n2",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When time is short, I tend to skip exploring the other side and act on my own read.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_pt_st_n3",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Considering the opposing view is something I do less when it would slow me down.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_pt_st_n4",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When emotions run high, I tend to focus on my own reading rather than theirs.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_pt_e_p1",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between defending my view and trying to see the other person's, I tend to try the other view first.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_pt_e_p2",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between holding my position and stepping into someone else's reasoning, I often step in.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_pt_e_p3",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "edge",
+"keyed": "positive",
+"text": "When dismissing a view I disagree with would be the simpler move, I usually try to understand the reasoning behind it first.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_pt_e_n1",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between defending my view and trying to see the other person's, I tend to defend mine first.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_pt_e_n2",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between holding my position and stepping into someone else's reasoning, I usually hold.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_pt_e_n3",
+"trait": "Agreeableness",
+"theme": "perspective_taking",
+"depth": "edge",
+"keyed": "negative",
+"text": "When the simpler move would be to dismiss a view, I find that easier than understanding it.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_ch_b_p1",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "base",
+"keyed": "positive",
+"text": "When friction starts to build between people around me, I tend to step in to smooth it over without being asked.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_ch_b_p2",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "base",
+"keyed": "positive",
+"text": "Adjusting how I do my own work so that it fits well with the people around me is something I do as a regular habit.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_ch_b_p3",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "base",
+"keyed": "positive",
+"text": "Making compromises in a group is something I do more readily than holding firm.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_ch_b_p4",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "base",
+"keyed": "positive",
+"text": "Keeping a workable, low-friction atmosphere with the people I cooperate with is something I actively put effort into.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_ch_b_n1",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "base",
+"keyed": "negative",
+"text": "Smoothing over friction is not something I take on unless it directly affects me.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_ch_b_n2",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "base",
+"keyed": "negative",
+"text": "Adjusting how I work to keep others comfortable is something I do only when needed.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_ch_b_n3",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "base",
+"keyed": "negative",
+"text": "Holding my position in a group tends to come more naturally than compromising.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_ch_b_n4",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "base",
+"keyed": "negative",
+"text": "Maintaining atmosphere is something I leave to whoever cares more about it.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_ch_s_p1",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When two people I work with are at odds, I tend to look for a way to bring them back into alignment.",
+"technique": "situational"
+},
+{
+"id": "agr_ch_s_p2",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a meeting starts to fray, I usually try to redirect it toward something productive.",
+"technique": "situational"
+},
+{
+"id": "agr_ch_s_p3",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When my preference clashes with the group's, I tend to give ground rather than push.",
+"technique": "situational"
+},
+{
+"id": "agr_ch_s_p4",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When tension starts rising in a group, I am usually among the people trying to reset the tone before it gets worse.",
+"technique": "situational"
+},
+{
+"id": "agr_ch_s_n1",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When two people I work with are at odds, I tend to stay out of it rather than try to mediate.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_ch_s_n2",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a meeting starts to fray, I tend to wait it out rather than try to redirect it.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_ch_s_n3",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When my preference clashes with the group's, I tend to push for mine rather than give ground.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_ch_s_n4",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When tension is rising, I am rarely the one who tries to reset the tone.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_ch_st_p1",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when I am right, I am willing to soften my stand to keep a group functioning.",
+"technique": "cognitive_tension"
+},
+{
+"id": "agr_ch_st_p2",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the work depends on people getting along, I will quietly take on the role of keeping it that way.",
+"technique": "stakes"
+},
+{
+"id": "agr_ch_st_p3",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Holding back a sharp response in order to keep things cooperative is something I do as a regular practice.",
+"technique": "stakes"
+},
+{
+"id": "agr_ch_st_p4",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Putting the working relationship ahead of being right is something I tend to do.",
+"technique": "stakes"
+},
+{
+"id": "agr_ch_st_n1",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When I am right, I am unlikely to soften my stand for the sake of group comfort.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_ch_st_n2",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the work depends on people getting along, I expect everyone to manage that themselves rather than smooth it over for them.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_ch_st_n3",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Holding back a sharp response to preserve cooperation is harder for me than just stating it.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_ch_st_n4",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Being right tends to matter more to me than easing the working relationship.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_ch_e_p1",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between standing firm on a small disagreement and conceding to keep things running, I usually concede.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_ch_e_p2",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between making a point and avoiding tension, I tend to avoid tension.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_ch_e_p3",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "edge",
+"keyed": "positive",
+"text": "When holding my line would create friction, I usually adjust.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_ch_e_n1",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between standing firm on a small disagreement and conceding to keep things running, I tend to stand firm.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_ch_e_n2",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between making a point and avoiding tension, I tend to make the point.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_ch_e_n3",
+"trait": "Agreeableness",
+"theme": "cooperation_harmony",
+"depth": "edge",
+"keyed": "negative",
+"text": "When holding my line would create friction, I usually hold it anyway.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_td_b_p1",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "base",
+"keyed": "positive",
+"text": "Assuming people mean well is closer to my default than assuming otherwise.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_td_b_p2",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "base",
+"keyed": "positive",
+"text": "Giving people the benefit of the doubt is something I do without needing them to earn it first.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_td_b_p3",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "base",
+"keyed": "positive",
+"text": "Trusting that others are acting in good faith is my starting position in most situations.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_td_b_p4",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "base",
+"keyed": "positive",
+"text": "Taking people at their word when they tell me something is more natural to me than questioning what they have said.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "agr_td_b_n1",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "base",
+"keyed": "negative",
+"text": "Reserving trust until someone has shown they merit it is closer to how I operate.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_td_b_n2",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "base",
+"keyed": "negative",
+"text": "Giving the benefit of the doubt is something I extend cautiously rather than freely.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_td_b_n3",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "base",
+"keyed": "negative",
+"text": "Treating others' motives as worth verifying is more natural to me than assuming the best.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_td_b_n4",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "base",
+"keyed": "negative",
+"text": "Believing people are being straightforward usually requires some evidence first.",
+"technique": "subtle_reverse"
+},
+{
+"id": "agr_td_s_p1",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When someone explains a setback, I tend to take their account at face value.",
+"technique": "situational"
+},
+{
+"id": "agr_td_s_p2",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a stranger asks for help, my first response is usually to assume they are sincere.",
+"technique": "situational"
+},
+{
+"id": "agr_td_s_p3",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When someone tells me they will do something, I tend to make my own plans on the assumption that they will.",
+"technique": "situational"
+},
+{
+"id": "agr_td_s_p4",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I hear a second-hand account of someone's behaviour, I tend to wait before letting it shape my view.",
+"technique": "situational"
+},
+{
+"id": "agr_td_s_n1",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When someone explains a setback, I tend to wonder what they might be leaving out.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_td_s_n2",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a stranger asks for help, my first response is usually to consider what they want.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_td_s_n3",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When someone says they will do something, I tend to plan as if they may not.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_td_s_n4",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I hear a second-hand account of someone's behaviour, I tend to factor it in immediately.",
+"technique": "situational_reverse"
+},
+{
+"id": "agr_td_st_p1",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when there are reasons to be cautious, I tend to extend trust first and adjust later.",
+"technique": "cognitive_tension"
+},
+{
+"id": "agr_td_st_p2",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When something could be read as suspicious or innocent, I tend to read it as innocent.",
+"technique": "stakes"
+},
+{
+"id": "agr_td_st_p3",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even after being let down by someone in the past, I tend to start the next relationship from a position of trust rather than caution.",
+"technique": "stakes"
+},
+{
+"id": "agr_td_st_p4",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When I cannot tell what is really driving someone's behaviour, I tend to settle on the most generous reading available.",
+"technique": "stakes"
+},
+{
+"id": "agr_td_st_n1",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When there are reasons to be cautious, I tend to hold trust back until things are clearer.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_td_st_n2",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When something could be read as suspicious or innocent, I tend to weigh the suspicious reading carefully.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_td_st_n3",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When I have been let down before, I am more cautious going into the next situation.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_td_st_n4",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When a person's motives are unclear, I tend to assume the version that protects me.",
+"technique": "stakes_reverse"
+},
+{
+"id": "agr_td_e_p1",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between trusting someone too much and holding trust back too far, I tend to trust more.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_td_e_p2",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between extending trust and waiting for proof, I tend to extend.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_td_e_p3",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "edge",
+"keyed": "positive",
+"text": "When uncertainty exists, I lean toward trusting first rather than verifying first.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "agr_td_e_n1",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between trusting someone too much and holding trust back too far, I tend to hold back.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_td_e_n2",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between extending trust and waiting for proof, I tend to wait.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "agr_td_e_n3",
+"trait": "Agreeableness",
+"theme": "trust_disposition",
+"depth": "edge",
+"keyed": "negative",
+"text": "When uncertainty exists, I lean toward verifying first rather than trusting first.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_ps_b_p1",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "base",
+"keyed": "positive",
+"text": "Mapping out how I will approach a task is something I do before beginning, even when the next step seems obvious.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_ps_b_p2",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "base",
+"keyed": "positive",
+"text": "Setting some kind of structure for how my day will go is something I do on my own, without anyone prompting it.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_ps_b_p3",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "base",
+"keyed": "positive",
+"text": "Defining the steps before acting is more natural to me than starting and adjusting.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_ps_b_p4",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "base",
+"keyed": "positive",
+"text": "Building a plan in advance, before I begin a piece of work, is something I do out of habit rather than effort.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_ps_b_n1",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "base",
+"keyed": "negative",
+"text": "Starting a task and figuring out the structure as I go is closer to my actual approach.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_ps_b_n2",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "base",
+"keyed": "negative",
+"text": "Setting a structure for my day is something I do only when it has clearly fallen apart.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_ps_b_n3",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "base",
+"keyed": "negative",
+"text": "Defining steps in advance often feels less efficient than just beginning.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_ps_b_n4",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "base",
+"keyed": "negative",
+"text": "Working without a plan is something I am usually comfortable doing.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_ps_s_p1",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When several tasks land at once, my first move is usually to lay out an order.",
+"technique": "situational"
+},
+{
+"id": "con_ps_s_p2",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When taking on something new, I sketch out the approach before committing to action.",
+"technique": "situational"
+},
+{
+"id": "con_ps_s_p3",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I have a complex week ahead, I tend to put it on paper before it begins.",
+"technique": "situational"
+},
+{
+"id": "con_ps_s_p4",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When the path is unclear, I tend to spend time outlining before starting to walk it.",
+"technique": "situational"
+},
+{
+"id": "con_ps_s_n1",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When several tasks land at once, I tend to start with whichever feels closest to ready.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_ps_s_n2",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When taking on something new, I tend to begin and shape the approach as I go.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_ps_s_n3",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I have a complex week ahead, I tend to handle it day by day.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_ps_s_n4",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When the path is unclear, I tend to start moving and clarify by doing.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_ps_st_p1",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when time pressure is high, I take a moment to plan rather than just begin.",
+"technique": "cognitive_tension"
+},
+{
+"id": "con_ps_st_p2",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the work is visible to others, my structure becomes more deliberate, not less.",
+"technique": "stakes"
+},
+{
+"id": "con_ps_st_p3",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the pressure on a piece of work goes up, I tend to plan more carefully rather than skip the planning step to save time.",
+"technique": "stakes"
+},
+{
+"id": "con_ps_st_p4",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the stakes attached to a task go up, the amount of preparation I put into it tends to go up alongside.",
+"technique": "stakes"
+},
+{
+"id": "con_ps_st_n1",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When time pressure is high, I tend to skip planning and start producing.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_ps_st_n2",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When work is visible, my approach becomes more reactive than structured.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_ps_st_n3",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Under pressure, I tend to abandon structure and improvise.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_ps_st_n4",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When stakes rise, I tend to act first and revisit structure later.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_ps_e_p1",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between planning before acting and acting before planning, I tend to plan.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_ps_e_p2",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between a slower start with structure and a faster start without, I tend to choose structure.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_ps_e_p3",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "edge",
+"keyed": "positive",
+"text": "When the option is to build a plan or save the time, I usually build the plan.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_ps_e_n1",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between planning before acting and acting before planning, I tend to act.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_ps_e_n2",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between a slower start with structure and a faster start without, I tend to choose speed.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_ps_e_n3",
+"trait": "Conscientiousness",
+"theme": "planning_structure",
+"depth": "edge",
+"keyed": "negative",
+"text": "When the option is to build a plan or save the time, I usually save the time.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_ft_b_p1",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "base",
+"keyed": "positive",
+"text": "Finishing what I start is something I do even when the energy behind it has faded.",
+"technique": "cognitive_tension"
+},
+{
+"id": "con_ft_b_p2",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "base",
+"keyed": "positive",
+"text": "Carrying a task all the way to completion is more natural to me than leaving things sitting half-done in the background.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_ft_b_p3",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "base",
+"keyed": "positive",
+"text": "Closing out work that no longer interests me is still something I do reliably.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_ft_b_p4",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "base",
+"keyed": "positive",
+"text": "Holding myself to finishing something I committed to is consistent across most things I do.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_ft_b_n1",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "base",
+"keyed": "negative",
+"text": "Letting tasks sit unfinished happens to me with some regularity.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_ft_b_n2",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "base",
+"keyed": "negative",
+"text": "Carrying tasks all the way to completion is something I struggle with once interest fades.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_ft_b_n3",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "base",
+"keyed": "negative",
+"text": "Closing out work that no longer interests me is something I tend to delay.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_ft_b_n4",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "base",
+"keyed": "negative",
+"text": "Sticking with something all the way to the end tends to be harder for me than starting it in the first place.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_ft_s_p1",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a project becomes tedious in its later stages, I still bring it to completion.",
+"technique": "situational"
+},
+{
+"id": "con_ft_s_p2",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I have started something and lost interest, I still tend to finish it.",
+"technique": "situational"
+},
+{
+"id": "con_ft_s_p3",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When the rewarding part of work is done, I still close out the rest.",
+"technique": "situational"
+},
+{
+"id": "con_ft_s_p4",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a task drags longer than expected, I tend to see it through rather than abandon it.",
+"technique": "situational"
+},
+{
+"id": "con_ft_s_n1",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a project becomes tedious in its later stages, my completion rate drops.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_ft_s_n2",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I have started something and lost interest, I often leave it for something fresher.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_ft_s_n3",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When the rewarding part of work is done, the rest tends to slip down my list.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_ft_s_n4",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a task drags longer than expected, I am more likely to set it aside.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_ft_st_p1",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when no one would notice the difference, I still bring tasks fully to completion.",
+"technique": "cognitive_tension"
+},
+{
+"id": "con_ft_st_p2",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the consequences of leaving something unfinished are minor, I still finish it.",
+"technique": "stakes"
+},
+{
+"id": "con_ft_st_p3",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When closing out an existing task would take more effort than just starting something new, I still tend to close the old one first.",
+"technique": "stakes"
+},
+{
+"id": "con_ft_st_p4",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Following through on small commitments matters to me even when no one else would notice whether I had or not.",
+"technique": "stakes"
+},
+{
+"id": "con_ft_st_n1",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When no one would notice the difference, I tend to leave tasks at good enough.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_ft_st_n2",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the consequences of leaving something unfinished are minor, finishing it usually slides.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_ft_st_n3",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When closing a task takes more effort than starting a new one, I tend to start the new one.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_ft_st_n4",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Following through on small commitments tends to fall off when nothing depends on it.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_ft_e_p1",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between leaving a task at 90 percent and pushing it to fully done, I tend to push it through.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_ft_e_p2",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between starting something new and finishing something old, I tend to finish.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_ft_e_p3",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "edge",
+"keyed": "positive",
+"text": "When abandoning a task would be easier, I usually finish it anyway.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_ft_e_n1",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between leaving a task at 90 percent and pushing it to fully done, I tend to leave it.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_ft_e_n2",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between starting something new and finishing something old, I tend to start the new one.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_ft_e_n3",
+"trait": "Conscientiousness",
+"theme": "follow_through",
+"depth": "edge",
+"keyed": "negative",
+"text": "When abandoning a task would be easier, I often abandon it.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_rc_b_p1",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "base",
+"keyed": "positive",
+"text": "Doing what I said I would do tends to be consistent across the different kinds of things I commit to.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_rc_b_p2",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "base",
+"keyed": "positive",
+"text": "Showing up to something I have committed to is something I treat as effectively non-negotiable.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_rc_b_p3",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "base",
+"keyed": "positive",
+"text": "Honouring small commitments matters to me even in cases where no one else would notice or keep track.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_rc_b_p4",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "base",
+"keyed": "positive",
+"text": "Following through on what I promise is more important to me than making the promise easily.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_rc_b_n1",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "base",
+"keyed": "negative",
+"text": "Doing what I said I would do is something I sometimes negotiate with myself later.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_rc_b_n2",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "base",
+"keyed": "negative",
+"text": "Showing up when I have committed is something I sometimes find ways out of.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_rc_b_n3",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "base",
+"keyed": "negative",
+"text": "Honoring small commitments tends to slide when something more pressing comes up.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_rc_b_n4",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "base",
+"keyed": "negative",
+"text": "Following through on what I promise is something my track record is uneven on.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_rc_s_p1",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When something I committed to becomes inconvenient, I tend to honor it anyway.",
+"technique": "situational"
+},
+{
+"id": "con_rc_s_p2",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When an easier alternative appears after I have committed, I tend to stay with what I committed to.",
+"technique": "situational"
+},
+{
+"id": "con_rc_s_p3",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I have agreed to do something, I tend to plan my other obligations around it.",
+"technique": "situational"
+},
+{
+"id": "con_rc_s_p4",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When my schedule shifts, I tend to rearrange the rest of it around my commitments rather than rearrange the commitments.",
+"technique": "situational"
+},
+{
+"id": "con_rc_s_n1",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When something I committed to becomes inconvenient, I tend to look for a way to step out.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_rc_s_n2",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When an easier alternative appears after I have committed, I tend to take the alternative.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_rc_s_n3",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I have agreed to do something, I sometimes find I have moved other things in front of it.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_rc_s_n4",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When my schedule shifts, my commitments tend to be the first to flex.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_rc_st_p1",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When backing out of a commitment would have no real cost, I still tend to honor it.",
+"technique": "cognitive_tension"
+},
+{
+"id": "con_rc_st_p2",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When others would not blame me for canceling, I still tend to follow through.",
+"technique": "stakes"
+},
+{
+"id": "con_rc_st_p3",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even small low-visibility commitments tend to be something I keep.",
+"technique": "stakes"
+},
+{
+"id": "con_rc_st_p4",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the choice is between meeting a low-priority commitment and doing something more enjoyable, I usually meet it.",
+"technique": "stakes"
+},
+{
+"id": "con_rc_st_n1",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When backing out of a commitment would have no real cost, I tend to let it go.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_rc_st_n2",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When others would not blame me for canceling, I am more likely to cancel.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_rc_st_n3",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Small low-visibility commitments tend to be the ones that slip first.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_rc_st_n4",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the choice is between a low-priority commitment and something more enjoyable, I lean toward the enjoyable.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_rc_e_p1",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between honoring a commitment that has become inconvenient and finding a way out, I usually honor it.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_rc_e_p2",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between cancelling and showing up, I tend to show up.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_rc_e_p3",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "edge",
+"keyed": "positive",
+"text": "When my mood is against following through, I follow through anyway.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_rc_e_n1",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between honoring a commitment that has become inconvenient and finding a way out, I tend to find a way out.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_rc_e_n2",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between cancelling and showing up, I lean toward cancelling more often than not.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_rc_e_n3",
+"trait": "Conscientiousness",
+"theme": "reliability_commitment",
+"depth": "edge",
+"keyed": "negative",
+"text": "When my mood is against following through, I tend to let the mood decide.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_do_b_p1",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "base",
+"keyed": "positive",
+"text": "Reviewing my work for small errors is something I do as a matter of course.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_do_b_p2",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "base",
+"keyed": "positive",
+"text": "Catching minor inconsistencies in a piece of work is something I tend to notice without consciously looking for them.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_do_b_p3",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "base",
+"keyed": "positive",
+"text": "Putting effort into small details that most people are not going to notice is something I do consistently anyway.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_do_b_p4",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "base",
+"keyed": "positive",
+"text": "Working until small things are right is more natural to me than calling it done early.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "con_do_b_n1",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "base",
+"keyed": "negative",
+"text": "Reviewing my work for small errors is not something I do consistently.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_do_b_n2",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "base",
+"keyed": "negative",
+"text": "Minor inconsistencies tend to slip past me unless someone points them out.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_do_b_n3",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "base",
+"keyed": "negative",
+"text": "Putting effort into details that most people will not see is something I rarely choose to do.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_do_b_n4",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "base",
+"keyed": "negative",
+"text": "Calling something done before every small thing is right is closer to my default.",
+"technique": "subtle_reverse"
+},
+{
+"id": "con_do_s_p1",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When sending something out, I read it through more than once before letting it go.",
+"technique": "situational"
+},
+{
+"id": "con_do_s_p2",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When something is functionally fine but cosmetically off, I tend to fix the cosmetic parts.",
+"technique": "situational"
+},
+{
+"id": "con_do_s_p3",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I notice a small error in my work, I tend to stop and fix it rather than note it for later.",
+"technique": "situational"
+},
+{
+"id": "con_do_s_p4",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I am pressed for time on a piece of work, I still tend to run through the details rather than skip that step.",
+"technique": "situational"
+},
+{
+"id": "con_do_s_n1",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When sending something out, one read-through is usually enough for me.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_do_s_n2",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When something is functionally fine but cosmetically off, I tend to leave the cosmetic parts.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_do_s_n3",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I notice a small error in my work, I tend to make a note and continue.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_do_s_n4",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When pressed for time, I tend to skip the detail check.",
+"technique": "situational_reverse"
+},
+{
+"id": "con_do_st_p1",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when accuracy will not be measured, I work to the same standard.",
+"technique": "cognitive_tension"
+},
+{
+"id": "con_do_st_p2",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When no one will check my work, I still verify it as if someone will.",
+"technique": "stakes"
+},
+{
+"id": "con_do_st_p3",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Holding my work to a high level of detail is something I do whether or not anyone is going to review it afterward.",
+"technique": "stakes"
+},
+{
+"id": "con_do_st_p4",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When a small error would not matter to anyone, I still tend to correct it.",
+"technique": "stakes"
+},
+{
+"id": "con_do_st_n1",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When accuracy will not be measured, my standard relaxes.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_do_st_n2",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When no one will check my work, I tend to skip the verification I would otherwise do.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_do_st_n3",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "stakes",
+"keyed": "negative",
+"text": "How carefully I work depends on whether it is going to be reviewed.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_do_st_n4",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When a small error would not matter to anyone, I tend to leave it.",
+"technique": "stakes_reverse"
+},
+{
+"id": "con_do_e_p1",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between calling something done and going back over the details once more, I tend to go back.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_do_e_p2",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between speed and precision on small things, I tend to choose precision.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_do_e_p3",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "edge",
+"keyed": "positive",
+"text": "When the detail is small and the cost of correcting it is low, I correct it.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "con_do_e_n1",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between calling something done and going back over the details once more, I tend to call it done.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_do_e_n2",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between speed and precision on small things, I tend to choose speed.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "con_do_e_n3",
+"trait": "Conscientiousness",
+"theme": "detail_orientation",
+"depth": "edge",
+"keyed": "negative",
+"text": "When the detail is small and the cost of correcting it is low, I still tend to leave it.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_sr_b_p1",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "base",
+"keyed": "positive",
+"text": "Pulling my focus back after a difficult or frustrating moment is something I tend to do fairly quickly.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_sr_b_p2",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "base",
+"keyed": "positive",
+"text": "Letting a setback settle without sitting on it for too long is consistent with how I usually operate.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_sr_b_p3",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "base",
+"keyed": "positive",
+"text": "Recovering my composure after something goes wrong is usually a short process for me.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_sr_b_p4",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "base",
+"keyed": "positive",
+"text": "Moving past a moment of frustration is something that happens for me without much conscious effort.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_sr_b_n1",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "base",
+"keyed": "negative",
+"text": "Returning to focus after a difficult moment is not something that happens quickly for me.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_sr_b_n2",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "base",
+"keyed": "negative",
+"text": "Letting setbacks settle without lingering on them is something I find difficult.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_sr_b_n3",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "base",
+"keyed": "negative",
+"text": "Recovering my composure after something goes wrong is something I notice taking time.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_sr_b_n4",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "base",
+"keyed": "negative",
+"text": "Moving on from frustration is something I work at rather than something that happens.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_sr_s_p1",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When something unexpected throws off my morning, my afternoon usually returns to normal.",
+"technique": "situational"
+},
+{
+"id": "emo_sr_s_p2",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a conversation goes badly, I tend to reset before it affects what I do next.",
+"technique": "situational"
+},
+{
+"id": "emo_sr_s_p3",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I make a noticeable mistake, I get past it without it dragging into the rest of my day.",
+"technique": "situational"
+},
+{
+"id": "emo_sr_s_p4",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When plans break down, I shift gears without carrying the disruption forward.",
+"technique": "situational"
+},
+{
+"id": "emo_sr_s_n1",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When something unexpected throws off my morning, the rest of the day tends to feel off.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_sr_s_n2",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a conversation goes badly, it tends to colour what I do for hours after.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_sr_s_n3",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I make a noticeable mistake, it stays with me for a while afterward.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_sr_s_n4",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When plans break down, I tend to carry the frustration into what comes next.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_sr_st_p1",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even after a significant setback, I am usually back to my normal pace within a short time.",
+"technique": "cognitive_tension"
+},
+{
+"id": "emo_sr_st_p2",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When something major goes wrong, I tend to recover faster than people expect.",
+"technique": "stakes"
+},
+{
+"id": "emo_sr_st_p3",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when stakes are high, a setback does not typically sideline me for long.",
+"technique": "stakes"
+},
+{
+"id": "emo_sr_st_p4",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When pressure on me builds up, the time I take to recover from setbacks stays roughly the same as in calmer periods.",
+"technique": "stakes"
+},
+{
+"id": "emo_sr_st_n1",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "stakes",
+"keyed": "negative",
+"text": "After a significant setback, returning to my normal pace usually takes a while.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_sr_st_n2",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When something major goes wrong, my recovery tends to take longer than I planned for.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_sr_st_n3",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When stakes are high, a setback can sideline me longer than I expected.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_sr_st_n4",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When pressure builds, my recovery time tends to lengthen.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_sr_e_p1",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between sitting with a setback and moving on, I tend to move on quickly.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_sr_e_p2",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between processing slowly and resuming quickly, I tend to resume.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_sr_e_p3",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "edge",
+"keyed": "positive",
+"text": "When the option is to dwell or proceed, I more often proceed.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_sr_e_n1",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between sitting with a setback and moving on, I tend to sit with it longer.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_sr_e_n2",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between processing slowly and resuming quickly, I tend to process slowly.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_sr_e_n3",
+"trait": "Emotional Stability",
+"theme": "stress_recovery",
+"depth": "edge",
+"keyed": "negative",
+"text": "When the option is to dwell or proceed, I more often dwell.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_pf_b_p1",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "base",
+"keyed": "positive",
+"text": "Holding my focus and composure through stretches that feel demanding is something I can do consistently.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_pf_b_p2",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "base",
+"keyed": "positive",
+"text": "Working through periods of real pressure without my output noticeably slipping is closer to my normal pattern.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_pf_b_p3",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "base",
+"keyed": "positive",
+"text": "Keeping my head clear when several things are competing for my attention at once is something I manage well.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_pf_b_p4",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "base",
+"keyed": "positive",
+"text": "Performing under real pressure is something I tend to do without my work losing much in the way of quality.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_pf_b_n1",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "base",
+"keyed": "negative",
+"text": "Holding my focus through demanding stretches is something I find difficult.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_pf_b_n2",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "base",
+"keyed": "negative",
+"text": "Working through pressure without my output suffering is something I struggle with.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_pf_b_n3",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "base",
+"keyed": "negative",
+"text": "Maintaining clarity when many things are competing for attention is something I struggle with.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_pf_b_n4",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "base",
+"keyed": "negative",
+"text": "Performing under pressure tends to noticeably affect the quality of my work.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_pf_s_p1",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When several deadlines stack up, I tend to keep my work steady rather than scattered.",
+"technique": "situational"
+},
+{
+"id": "emo_pf_s_p2",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When the day has too much in it, I still finish what I set out to do.",
+"technique": "situational"
+},
+{
+"id": "emo_pf_s_p3",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When interruptions are constant, I am still able to return to the task each time.",
+"technique": "situational"
+},
+{
+"id": "emo_pf_s_p4",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When the pace picks up, my work pace tends to keep up rather than fall behind.",
+"technique": "situational"
+},
+{
+"id": "emo_pf_s_n1",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When several deadlines stack up, my work tends to become scattered.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_pf_s_n2",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When the day has too much in it, what I set out to do does not all get done.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_pf_s_n3",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When interruptions are constant, returning to the task each time becomes harder.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_pf_s_n4",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When the pace picks up, my work pace tends to fall behind rather than match it.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_pf_st_p1",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the outcome matters more, my focus tends to sharpen rather than fragment.",
+"technique": "cognitive_tension"
+},
+{
+"id": "emo_pf_st_p2",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When I am being observed under pressure, my performance does not noticeably drop.",
+"technique": "stakes"
+},
+{
+"id": "emo_pf_st_p3",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when the cost of error rises, my ability to focus stays steady.",
+"technique": "stakes"
+},
+{
+"id": "emo_pf_st_p4",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Pressure that I see distract or unsettle other people tends to leave my own focus largely unaffected.",
+"technique": "stakes"
+},
+{
+"id": "emo_pf_st_n1",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the outcome matters more, my focus tends to fragment rather than sharpen.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_pf_st_n2",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When I am being observed under pressure, my performance noticeably drops.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_pf_st_n3",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the cost of error rises, my focus becomes harder to hold.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_pf_st_n4",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Higher stakes tend to make focused work harder for me, not easier.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_pf_e_p1",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between fragmenting under pressure and pushing through, I tend to push through.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_pf_e_p2",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between stepping back and staying with the work, I usually stay.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_pf_e_p3",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "edge",
+"keyed": "positive",
+"text": "When pressure rises sharply, I lean into the work rather than away from it.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_pf_e_n1",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between fragmenting under pressure and pushing through, I tend to fragment first.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_pf_e_n2",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between stepping back and staying with the work, I tend to step back.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_pf_e_n3",
+"trait": "Emotional Stability",
+"theme": "pressure_focus",
+"depth": "edge",
+"keyed": "negative",
+"text": "When pressure rises sharply, I lean away from the work rather than into it.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_cc_b_p1",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "base",
+"keyed": "positive",
+"text": "Receiving critical feedback is something I can take in without it noticeably shaking my confidence in the moment.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_cc_b_p2",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "base",
+"keyed": "positive",
+"text": "Staying composed when my view is being directly challenged is something I can do without much difficulty.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_cc_b_p3",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "base",
+"keyed": "positive",
+"text": "Engaging with criticism on its merits, without slipping into defensiveness, is part of my normal pattern.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_cc_b_p4",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "base",
+"keyed": "positive",
+"text": "Staying steady in how I see myself after receiving pushback is more natural to me than feeling thrown by it.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_cc_b_n1",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "base",
+"keyed": "negative",
+"text": "Receiving critical feedback tends to shake my confidence noticeably.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_cc_b_n2",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "base",
+"keyed": "negative",
+"text": "Holding my view after it has been challenged is something I find difficult.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_cc_b_n3",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "base",
+"keyed": "negative",
+"text": "Engaging with criticism without becoming defensive is something I notice slipping.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_cc_b_n4",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "base",
+"keyed": "negative",
+"text": "Staying steady in how I see myself after receiving pushback is something I find difficult.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_cc_s_p1",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When my work is being criticized, I tend to consider the points being made without losing my footing emotionally.",
+"technique": "situational"
+},
+{
+"id": "emo_cc_s_p2",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When someone questions my approach, I can stay calm while genuinely engaging with what they are saying.",
+"technique": "situational"
+},
+{
+"id": "emo_cc_s_p3",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I am being challenged in front of other people, I respond on an even keel rather than withdraw.",
+"technique": "situational"
+},
+{
+"id": "emo_cc_s_p4",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When feedback comes in direct or sharp form, I tend to take what is useful from it and keep moving.",
+"technique": "situational"
+},
+{
+"id": "emo_cc_s_n1",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When my work is criticized, my footing tends to wobble for a while afterward.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_cc_s_n2",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When someone questions my approach, I tend to give ground further than the situation requires.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_cc_s_n3",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I am challenged in front of others, I tend to retreat rather than respond evenly.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_cc_s_n4",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When feedback is direct or harsh, it tends to stay with me longer than the points warrant.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_cc_st_p1",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When critique comes from someone whose opinion I particularly value, I can still take it in without it destabilising me.",
+"technique": "cognitive_tension"
+},
+{
+"id": "emo_cc_st_p2",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When my work is reviewed publicly, my confidence stays intact.",
+"technique": "stakes"
+},
+{
+"id": "emo_cc_st_p3",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when critique comes at me repeatedly, my underlying sense of how I am doing does not get shaken by it.",
+"technique": "stakes"
+},
+{
+"id": "emo_cc_st_p4",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the feedback could change how others see me, I still respond to it from an emotionally steady place.",
+"technique": "stakes"
+},
+{
+"id": "emo_cc_st_n1",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When critique comes from someone whose opinion I value, my ground gives way more than I want it to.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_cc_st_n2",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When my work is reviewed publicly, my confidence dips in ways that take time to recover.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_cc_st_n3",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Repeated critique tends to wear down my underlying assessment of myself.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_cc_st_n4",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When feedback could affect how others see me, I respond from a less steady place.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_cc_e_p1",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between staying composed under critique and getting visibly thrown by it, I tend to stay composed.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_cc_e_p2",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between sitting with the discomfort of critique and folding to end it, I tend to sit with it.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_cc_e_p3",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "edge",
+"keyed": "positive",
+"text": "When backing down under critique would be the more comfortable option, I tend not to take it just for the comfort.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_cc_e_n1",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between staying composed under critique and getting visibly thrown by it, I tend to get thrown.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_cc_e_n2",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between sitting with the discomfort of critique and folding to end it, I tend to fold.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_cc_e_n3",
+"trait": "Emotional Stability",
+"theme": "confidence_under_critique",
+"depth": "edge",
+"keyed": "negative",
+"text": "When backing down under critique would be the more comfortable option, that comfort tends to win.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_ev_b_p1",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "base",
+"keyed": "positive",
+"text": "Holding a fairly steady mood across the course of a day is more typical of me than moving through a wide range of states.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_ev_b_p2",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "base",
+"keyed": "positive",
+"text": "Keeping an even temperament across small irritations is consistent with how I usually operate.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_ev_b_p3",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "base",
+"keyed": "positive",
+"text": "Letting small things shift my mood in a noticeable way is not something I tend to do.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_ev_b_p4",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "base",
+"keyed": "positive",
+"text": "Staying on an even keel is closer to my baseline than fluctuating.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "emo_ev_b_n1",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "base",
+"keyed": "negative",
+"text": "Small things tend to move my mood more than they probably should.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_ev_b_n2",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "base",
+"keyed": "negative",
+"text": "My emotional state shifts more across a day than other people's seem to.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_ev_b_n3",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "base",
+"keyed": "negative",
+"text": "Holding a steady mood is something I have to work at rather than something that just happens.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_ev_b_n4",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "base",
+"keyed": "negative",
+"text": "Riding out small irritations without my mood changing is something I find hard to do.",
+"technique": "subtle_reverse"
+},
+{
+"id": "emo_ev_s_p1",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When something minor goes wrong, my mood does not noticeably shift.",
+"technique": "situational"
+},
+{
+"id": "emo_ev_s_p2",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I am running late or under small frustrations, those rarely affect my temperament.",
+"technique": "situational"
+},
+{
+"id": "emo_ev_s_p3",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When several small irritations stack up, I tend to stay close to my normal baseline.",
+"technique": "situational"
+},
+{
+"id": "emo_ev_s_p4",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When something irritates me, the irritation usually passes within minutes rather than carrying through the rest of my day.",
+"technique": "situational"
+},
+{
+"id": "emo_ev_s_n1",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When something minor goes wrong, my mood tends to shift noticeably.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_ev_s_n2",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I am running late or under small frustrations, those tend to leak into how I act with others.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_ev_s_n3",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When several small irritations stack up, my baseline noticeably moves.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_ev_s_n4",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When something annoys me, the irritation tends to last longer than the trigger merits.",
+"technique": "situational_reverse"
+},
+{
+"id": "emo_ev_st_p1",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the day involves more friction than usual, my mood holds reasonably steady.",
+"technique": "cognitive_tension"
+},
+{
+"id": "emo_ev_st_p2",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Across long stretches of pressure, I tend to notice fewer mood swings in myself than I see in the people around me.",
+"technique": "stakes"
+},
+{
+"id": "emo_ev_st_p3",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even on bad days, my emotional baseline does not shift dramatically.",
+"technique": "stakes"
+},
+{
+"id": "emo_ev_st_p4",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When circumstances stay difficult for sustained periods, I tend to keep an even tone in how I act around others.",
+"technique": "stakes"
+},
+{
+"id": "emo_ev_st_n1",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the day involves more friction than usual, my mood swings become more noticeable.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_ev_st_n2",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Across stretches of pressure, I notice more mood swings than I would prefer.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_ev_st_n3",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "stakes",
+"keyed": "negative",
+"text": "On bad days, my emotional baseline shifts noticeably.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_ev_st_n4",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When circumstances are difficult for sustained periods, my tone becomes harder to keep even.",
+"technique": "stakes_reverse"
+},
+{
+"id": "emo_ev_e_p1",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between reacting and staying steady when something irritates me, I tend to stay steady.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_ev_e_p2",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between letting a frustration show and keeping it contained, I tend to contain it.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_ev_e_p3",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "edge",
+"keyed": "positive",
+"text": "When something pushes my mood, I tend to recover before it affects others.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "emo_ev_e_n1",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between reacting and staying steady when something irritates me, I tend to react first.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_ev_e_n2",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between letting a frustration show and keeping it contained, the frustration tends to come through.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "emo_ev_e_n3",
+"trait": "Emotional Stability",
+"theme": "emotional_volatility",
+"depth": "edge",
+"keyed": "negative",
+"text": "When something pushes my mood, others tend to notice before I have recovered.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_ic_b_p1",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "base",
+"keyed": "positive",
+"text": "Looking into topics that have nothing to do with what I need to know is something I do on a regular basis.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ic_b_p2",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "base",
+"keyed": "positive",
+"text": "Reading or exploring areas outside my usual interests is a regular part of how I spend my time.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ic_b_p3",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "base",
+"keyed": "positive",
+"text": "Following an idea further than the immediate question requires is something I do without prompting.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ic_b_p4",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "base",
+"keyed": "positive",
+"text": "Learning about subjects that have no practical use to me is something I find worthwhile for its own sake.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ic_b_n1",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "base",
+"keyed": "negative",
+"text": "Looking into topics I do not need to know about is something I rarely make time for.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ic_b_n2",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "base",
+"keyed": "negative",
+"text": "Reading outside my usual interests is not something I make regular time for.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ic_b_n3",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "base",
+"keyed": "negative",
+"text": "Following an idea further than the immediate question requires is not how I usually spend my attention.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ic_b_n4",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "base",
+"keyed": "negative",
+"text": "Learning about subjects without practical use to me is hard for me to justify.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ic_s_p1",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a passing reference catches my attention, I tend to look it up rather than let it pass.",
+"technique": "situational"
+},
+{
+"id": "opn_ic_s_p2",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I encounter a concept I do not know, I usually take time to understand it.",
+"technique": "situational"
+},
+{
+"id": "opn_ic_s_p3",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a question comes up that I cannot answer, I tend to chase it down later.",
+"technique": "situational"
+},
+{
+"id": "opn_ic_s_p4",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When an unfamiliar idea is mentioned, I tend to ask about it instead of moving on.",
+"technique": "situational"
+},
+{
+"id": "opn_ic_s_n1",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a passing reference catches my attention, I tend to let it go.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ic_s_n2",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I encounter a concept I do not know, I usually wait to see if it comes up again.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ic_s_n3",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a question comes up that I cannot answer, I tend to forget about it within the day.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ic_s_n4",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When an unfamiliar idea is mentioned, I tend to keep moving rather than ask about it.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ic_st_p1",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when there is no use for what I am learning, I continue to read into it.",
+"technique": "cognitive_tension"
+},
+{
+"id": "opn_ic_st_p2",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When time is short, I still carve out time for ideas that interest me.",
+"technique": "stakes"
+},
+{
+"id": "opn_ic_st_p3",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When something is irrelevant to my goals, my interest in it does not necessarily fade.",
+"technique": "stakes"
+},
+{
+"id": "opn_ic_st_p4",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Pursuing an idea simply because it is interesting is something I do whether or not there is a payoff at the end.",
+"technique": "stakes"
+},
+{
+"id": "opn_ic_st_n1",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When there is no use for what I am learning, my interest in it tends to fade quickly.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ic_st_n2",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When time is short, exploring ideas is the first thing I drop.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ic_st_n3",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When something is irrelevant to my goals, I tend to set it aside.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ic_st_n4",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Pursuing an idea without payoff is something I rarely do.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ic_e_p1",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between reading more about something interesting and moving to something useful, I tend to keep reading.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_ic_e_p2",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between satisfying curiosity and saving the time, I usually satisfy the curiosity.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_ic_e_p3",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "edge",
+"keyed": "positive",
+"text": "When learning something has no clear use, I still tend to learn it.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_ic_e_n1",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between reading more about something interesting and moving to something useful, I tend to move on.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_ic_e_n2",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between satisfying curiosity and saving the time, I usually save the time.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_ic_e_n3",
+"trait": "Openness",
+"theme": "intellectual_curiosity",
+"depth": "edge",
+"keyed": "negative",
+"text": "When learning something has no clear use, I tend to skip it.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_np_b_p1",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "base",
+"keyed": "positive",
+"text": "Trying a fresh way of doing something is more interesting to me than refining the way I already know works.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_np_b_p2",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "base",
+"keyed": "positive",
+"text": "Variety in how I approach things is something I look for rather than avoid.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_np_b_p3",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "base",
+"keyed": "positive",
+"text": "When given the choice, I tend to pick the unfamiliar option more often than the familiar one.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_np_b_p4",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "base",
+"keyed": "positive",
+"text": "Going somewhere new or trying a different method is part of how I keep my routines from going stale.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_np_b_n1",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "base",
+"keyed": "negative",
+"text": "Refining a familiar approach is more comfortable to me than trying something new.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_np_b_n2",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "base",
+"keyed": "negative",
+"text": "Variety in how I approach things is less important to me than reliability.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_np_b_n3",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "base",
+"keyed": "negative",
+"text": "Choosing the familiar option is something I do more often than the unfamiliar one.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_np_b_n4",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "base",
+"keyed": "negative",
+"text": "Sticking with the same place or method is more in line with how I prefer to work.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_np_s_p1",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I have a choice between repeating a method that works and trying a new one, I lean toward the new one.",
+"technique": "situational"
+},
+{
+"id": "opn_np_s_p2",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When my routine starts to feel set, I tend to introduce variation.",
+"technique": "situational"
+},
+{
+"id": "opn_np_s_p3",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When something new is offered, I tend to try it rather than stick to what I know.",
+"technique": "situational"
+},
+{
+"id": "opn_np_s_p4",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When the familiar option and the unknown option are both available, I tend to pick the unknown.",
+"technique": "situational"
+},
+{
+"id": "opn_np_s_n1",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I have a choice between repeating a method that works and trying a new one, I lean toward what works.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_np_s_n2",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When my routine starts to feel set, I tend to leave it alone.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_np_s_n3",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When something new is offered, I tend to stay with what I know.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_np_s_n4",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When the familiar option and the unknown option are both available, I tend to pick the familiar.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_np_st_p1",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When stakes are real, I am still inclined to try a different approach rather than the safe one.",
+"technique": "cognitive_tension"
+},
+{
+"id": "opn_np_st_p2",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Trying something untested is something I will do even when the safe option is available.",
+"technique": "stakes"
+},
+{
+"id": "opn_np_st_p3",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when a failure would be visible to others, I still favour the novel approach often enough.",
+"technique": "stakes"
+},
+{
+"id": "opn_np_st_p4",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the cost of trying something new is real, the novelty still tends to draw me.",
+"technique": "stakes"
+},
+{
+"id": "opn_np_st_n1",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When stakes are real, I tend to fall back on what has worked before.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_np_st_n2",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Trying something untested is something I do less when the safe option is available.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_np_st_n3",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When failure would be visible, I tend to stick to the proven approach.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_np_st_n4",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the cost of trying something new is real, I tend to choose the familiar.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_np_e_p1",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between sticking with what works and trying something untested, I tend to try.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_np_e_p2",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between novelty and certainty, I lean toward novelty.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_np_e_p3",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "edge",
+"keyed": "positive",
+"text": "When the new option is available, I tend to take it.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_np_e_n1",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between sticking with what works and trying something untested, I tend to stick.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_np_e_n2",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between novelty and certainty, I lean toward certainty.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_np_e_n3",
+"trait": "Openness",
+"theme": "novelty_preference",
+"depth": "edge",
+"keyed": "negative",
+"text": "When the new option is available, I often pass it up.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_ae_b_p1",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "base",
+"keyed": "positive",
+"text": "Sitting with a question that has not been resolved yet is something I can do without it bothering me.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ae_b_p2",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "base",
+"keyed": "positive",
+"text": "Engaging with problems that have no clear answer tends to hold my attention rather than wear it down.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ae_b_p3",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "base",
+"keyed": "positive",
+"text": "Holding several different possibilities open in my mind at the same time is something I can do without strain.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ae_b_p4",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "base",
+"keyed": "positive",
+"text": "Working on something without yet having a clear definition of the problem is a state I am at ease with.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ae_b_n1",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "base",
+"keyed": "negative",
+"text": "Sitting with an unresolved question is something I find difficult.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ae_b_n2",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "base",
+"keyed": "negative",
+"text": "Engaging with problems that have no clear answer tends to drain my attention.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ae_b_n3",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "base",
+"keyed": "negative",
+"text": "Holding several possibilities open at once is harder for me than narrowing to one.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ae_b_n4",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "base",
+"keyed": "negative",
+"text": "Working without a clear definition of the problem is something I would rather avoid.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ae_s_p1",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a problem has no clear path forward, I am willing to keep working on it.",
+"technique": "situational"
+},
+{
+"id": "opn_ae_s_p2",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When the answer is not yet visible, I tend to stay engaged rather than pull back.",
+"technique": "situational"
+},
+{
+"id": "opn_ae_s_p3",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When the work is exploratory and undefined, I tend to find it interesting.",
+"technique": "situational"
+},
+{
+"id": "opn_ae_s_p4",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When a question is open-ended, I tend to follow where it leads rather than force closure.",
+"technique": "situational"
+},
+{
+"id": "opn_ae_s_n1",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a problem has no clear path forward, I tend to lose energy for it.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ae_s_n2",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When the answer is not yet visible, I tend to pull back rather than stay engaged.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ae_s_n3",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When the work is exploratory and undefined, I tend to find it frustrating.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ae_s_n4",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When a question is open-ended, I tend to push for closure rather than let it unfold.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ae_st_p1",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When pressure rises and the path is unclear, I am still able to keep working through the ambiguity.",
+"technique": "cognitive_tension"
+},
+{
+"id": "opn_ae_st_p2",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the situation requires a decision but the information is incomplete, I am comfortable proceeding anyway.",
+"technique": "stakes"
+},
+{
+"id": "opn_ae_st_p3",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When others want certainty, I am willing to hold the open question a bit longer.",
+"technique": "stakes"
+},
+{
+"id": "opn_ae_st_p4",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the work calls for tolerating uncertainty for an extended period, I tend to do that without much strain.",
+"technique": "stakes"
+},
+{
+"id": "opn_ae_st_n1",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When pressure rises and the path is unclear, my tolerance for the ambiguity drops.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ae_st_n2",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the situation requires a decision but the information is incomplete, I struggle to proceed.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ae_st_n3",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When others want certainty, I tend to provide it sooner than the situation supports.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ae_st_n4",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the work calls for tolerating uncertainty, that tolerance comes with strain.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ae_e_p1",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between forcing closure and sitting longer with an open question, I tend to sit longer.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_ae_e_p2",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between clarity now and a better answer later, I tend to wait.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_ae_e_p3",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "edge",
+"keyed": "positive",
+"text": "When ambiguity becomes uncomfortable, I tend to lean in rather than collapse to a quick answer.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_ae_e_n1",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between forcing closure and sitting longer with an open question, I tend to force closure.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_ae_e_n2",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between clarity now and a better answer later, I tend to choose clarity now.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_ae_e_n3",
+"trait": "Openness",
+"theme": "ambiguity_engagement",
+"depth": "edge",
+"keyed": "negative",
+"text": "When ambiguity becomes uncomfortable, I tend to collapse to a quick answer rather than lean in.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_ai_b_p1",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "base",
+"keyed": "positive",
+"text": "Noticing how things look, sound, or are put together is something I do without consciously deciding to.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ai_b_p2",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "base",
+"keyed": "positive",
+"text": "Imagining alternative versions of whatever is in front of me is something my mind does on its own, regularly.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ai_b_p3",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "base",
+"keyed": "positive",
+"text": "Spending time on how something feels or looks, beyond just what it does, is part of how I engage with it.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ai_b_p4",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "base",
+"keyed": "positive",
+"text": "Letting my mind drift into imagined scenarios is more natural to me than staying anchored only in what is concrete.",
+"technique": "behavioral_specificity"
+},
+{
+"id": "opn_ai_b_n1",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "base",
+"keyed": "negative",
+"text": "Noticing how things look or are designed is something I rarely pay attention to.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ai_b_n2",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "base",
+"keyed": "negative",
+"text": "Imagining alternative versions of what is in front of me is something I do less than other people seem to.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ai_b_n3",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "base",
+"keyed": "negative",
+"text": "Spending time on how something feels or looks is hard for me to justify.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ai_b_n4",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "base",
+"keyed": "negative",
+"text": "Letting my mind wander into imagined scenarios is less natural to me than staying with what is concrete.",
+"technique": "subtle_reverse"
+},
+{
+"id": "opn_ai_s_p1",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I encounter a piece of art or design, I tend to engage with it rather than pass it by.",
+"technique": "situational"
+},
+{
+"id": "opn_ai_s_p2",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When something is described in vivid detail, I tend to picture it clearly rather than just register it.",
+"technique": "situational"
+},
+{
+"id": "opn_ai_s_p3",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I have a quiet moment, my mind tends to drift into imagined scenes.",
+"technique": "situational"
+},
+{
+"id": "opn_ai_s_p4",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "scenario",
+"keyed": "positive",
+"text": "When I am thinking through a problem, my mind tends to wander through possibilities I have not been given.",
+"technique": "situational"
+},
+{
+"id": "opn_ai_s_n1",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I encounter a piece of art or design, I tend to pass by it rather than engage.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ai_s_n2",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When something is described in vivid detail, I tend to register it rather than picture it.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ai_s_n3",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I have a quiet moment, my mind tends to stay on practical things.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ai_s_n4",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "scenario",
+"keyed": "negative",
+"text": "When I am thinking through a problem, I tend to stay close to the given options rather than imagine new ones.",
+"technique": "situational_reverse"
+},
+{
+"id": "opn_ai_st_p1",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Even when the practical answer is obvious, I tend to spend time on the imaginative one too.",
+"technique": "cognitive_tension"
+},
+{
+"id": "opn_ai_st_p2",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When the goal is functional, I still pay attention to how things look and feel.",
+"technique": "stakes"
+},
+{
+"id": "opn_ai_st_p3",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "stakes",
+"keyed": "positive",
+"text": "When efficiency would suggest skipping the aesthetic, I still attend to it.",
+"technique": "stakes"
+},
+{
+"id": "opn_ai_st_p4",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "stakes",
+"keyed": "positive",
+"text": "Aesthetic considerations matter to me even in contexts where they would not strictly need to.",
+"technique": "stakes"
+},
+{
+"id": "opn_ai_st_n1",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the practical answer is obvious, I rarely spend time on the imaginative one.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ai_st_n2",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When the goal is functional, how things look and feel tends to drop off my radar.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ai_st_n3",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "stakes",
+"keyed": "negative",
+"text": "When efficiency would suggest skipping the aesthetic, I usually skip it.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ai_st_n4",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "stakes",
+"keyed": "negative",
+"text": "Aesthetic considerations are something I weigh only when the context calls for them.",
+"technique": "stakes_reverse"
+},
+{
+"id": "opn_ai_e_p1",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "edge",
+"keyed": "positive",
+"text": "Between focusing on the practical and engaging with the imaginative, I tend to make space for both.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_ai_e_p2",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "edge",
+"keyed": "positive",
+"text": "Given the choice between a functional answer and a more imaginative one, I tend to prefer the imaginative.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_ai_e_p3",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "edge",
+"keyed": "positive",
+"text": "When the imaginative path takes longer, I tend to take it anyway.",
+"technique": "forced_tradeoff"
+},
+{
+"id": "opn_ai_e_n1",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "edge",
+"keyed": "negative",
+"text": "Between focusing on the practical and engaging with the imaginative, I tend to stick with the practical.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_ai_e_n2",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "edge",
+"keyed": "negative",
+"text": "Given the choice between a functional answer and a more imaginative one, I tend to choose functional.",
+"technique": "forced_tradeoff_reverse"
+},
+{
+"id": "opn_ai_e_n3",
+"trait": "Openness",
+"theme": "aesthetic_imagination",
+"depth": "edge",
+"keyed": "negative",
+"text": "When the imaginative path takes longer, I tend to skip it for the direct one.",
+"technique": "forced_tradeoff_reverse"
+}
+]

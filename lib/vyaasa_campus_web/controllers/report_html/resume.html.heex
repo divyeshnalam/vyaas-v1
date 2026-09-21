@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Resume Analysis Report</title>
+    <style><%= raw(common_styles()) %></style>
+    <style>
+      .competency { margin-bottom: 12px; }
+      .competency:last-child { margin-bottom: 0; }
+      .competency .head {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10pt;
+        color: #374151;
+        margin-bottom: 4px;
+      }
+      .competency .head .label { font-weight: 600; color: #111827; }
+      .competency .bar { width: 100%; background: #e5e7eb; border-radius: 9999px; height: 7px; overflow: hidden; }
+      .competency .bar > span { display: block; height: 100%; border-radius: 9999px; }
+      .chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+      .chip { font-size: 9pt; padding: 2px 8px; border-radius: 9999px; background: #f3f4f6; color: #374151; }
+      .stat { text-align: center; padding: 8px; border: 1px solid #e5e7eb; border-radius: 8px; }
+      .stat .n { font-size: 14pt; font-weight: 700; color: #111827; }
+      .stat .l { font-size: 8.5pt; color: #6b7280; text-transform: uppercase; letter-spacing: .04em; }
+    </style>
+  </head>
+  <body>
+    <div class="report">
+      <.report_watermark watermark_src={@watermark_src} />
+      <.report_header logo_src={@logo_src} student={@student} generated_at_display={@generated_at_display} />
+
+      <section class="title-block">
+        <div>
+          <h1>Resume Analysis</h1>
+          <p :if={@total_experience}>Total experience: {@total_experience}</p>
+        </div>
+        <span
+          class="badge"
+          style={"background: #{tint_hex(@performance_color)}; color: #{color_hex(@performance_color)};"}
+        >
+          {@performance_label}
+        </span>
+      </section>
+
+      <section class="card">
+        <h3>Overall Resume Score</h3>
+        <div class="score-hero">
+          <div class="gauge">
+            <svg width="130" height="130" viewBox="0 0 130 130">
+              <circle cx="65" cy="65" r="55" stroke="#e5e7eb" stroke-width="10" fill="none" />
+              <circle
+                cx="65"
+                cy="65"
+                r="55"
+                stroke={color_hex(@performance_color)}
+                stroke-width="10"
+                fill="none"
+                stroke-linecap="round"
+                stroke-dasharray={Float.round(2 * 3.14159 * 55, 2)}
+                stroke-dashoffset={Float.round(2 * 3.14159 * 55 * (1 - clamp_pct(@score) / 100), 2)}
+              />
+            </svg>
+            <div class="center">
+              <div class="score">{@score}<small style="font-size: 9pt; color: #6b7280; font-weight: 500;">/100</small></div>
+              <div class="label">ATS Score</div>
+            </div>
+          </div>
+          <div class="score-summary">
+            <div class="pct" style={"color: #{color_hex(@performance_color)};"}>{@score}%</div>
+            <div class="verdict" style={"color: #{color_hex(@performance_color)};"}>{@performance_label}</div>
+            <div :if={@summary_text} class="sub">{@summary_text}</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Score Breakdown</h3>
+        <%= for {label, val} <- @subscores do %>
+          <div class="competency">
+            <div class="head">
+              <span class="label">{label}</span>
+              <span>{val}/100</span>
+            </div>
+            <div class="bar">
+              <span style={"width: #{clamp_pct(val)}%; background: #{color_hex(perf_color(val))};"}></span>
+            </div>
+          </div>
+        <% end %>
+      </section>
+
+      <section class="card">
+        <h3>Resume Contents</h3>
+        <div class="grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;">
+          <div class="stat"><div class="n">{@experience_count}</div><div class="l">Experience</div></div>
+          <div class="stat"><div class="n">{@projects_count}</div><div class="l">Projects</div></div>
+          <div class="stat"><div class="n">{@education_count}</div><div class="l">Education</div></div>
+        </div>
+
+        <div :if={@technical_skills != []} style="margin-top: 10px;">
+          <h4 class="section">Technical Skills</h4>
+          <div class="chips">
+            <span :for={s <- @technical_skills} class="chip">{s}</span>
+          </div>
+        </div>
+        <div :if={@non_technical_skills != []} style="margin-top: 8px;">
+          <h4 class="section">Non-Technical Skills</h4>
+          <div class="chips">
+            <span :for={s <- @non_technical_skills} class="chip">{s}</span>
+          </div>
+        </div>
+      </section>
+
+      <section :if={@improvements != []} class="card">
+        <h4 class="section">Suggested Improvements</h4>
+        <ul class="tight">
+          <li :for={item <- @improvements}>{item}</li>
+        </ul>
+      </section>
+
+      <.report_footer generated_at_display={@generated_at_display} />
+    </div>
+  </body>
+</html>

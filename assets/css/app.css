@@ -1,0 +1,157 @@
+/* See the Tailwind configuration guide for advanced usage
+   https://tailwindcss.com/docs/configuration */
+
+@import "tailwindcss" source(none);
+@source "../css";
+@source "../js";
+@source "../../lib/vyaasa_campus_web";
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* A Tailwind plugin that makes "hero-#{ICON}" classes available.
+   The heroicons installation itself is managed by your mix.exs */
+@plugin "../vendor/heroicons";
+
+/* daisyUI Tailwind Plugin. You can update this file by fetching the latest version with:
+   curl -sLO https://github.com/saadeghi/daisyui/releases/latest/download/daisyui.js
+   Make sure to look at the daisyUI changelog: https://daisyui.com/docs/changelog/ */
+@plugin "../vendor/daisyui" {
+  themes: false;
+}
+
+/* daisyUI theme plugin. You can update this file by fetching the latest version with:
+  curl -sLO https://github.com/saadeghi/daisyui/releases/latest/download/daisyui-theme.js
+  We ship with two themes, a light one inspired on Phoenix colors and a dark one inspired
+  on Elixir colors. Build your own at: https://daisyui.com/theme-generator/ */
+@plugin "../vendor/daisyui-theme" {
+  name: "light";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: #ffffff;
+  --color-base-200: #f8f9fa;
+  --color-base-300: #e9ecef;
+  --color-base-content: #FF8B00;
+  --color-primary: #FF8B00;
+  --color-primary-content: #ffffff;
+  --color-secondary: #FF8B00;
+  --color-secondary-content: #ffffff;
+  --color-accent: #FF8B00;
+  --color-accent-content: #ffffff;
+  --color-neutral: #6c757d;
+  --color-neutral-content: #ffffff;
+  --color-info: #FF8B00;
+  --color-info-content: #ffffff;
+  --color-success: #28a745;
+  --color-success-content: #ffffff;
+  --color-warning: #ffc107;
+  --color-warning-content: #000000;
+  --color-error: #dc3545;
+  --color-error-content: #ffffff;
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.21875rem;
+  --size-field: 0.21875rem;
+  --border: 1.5px;
+  --depth: 1;
+  --noise: 0;
+}
+
+/* Custom grid columns for admin dashboard table */
+@utility grid-cols-16 {
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+}
+
+/* Add variants based on LiveView classes */
+@custom-variant phx-click-loading (.phx-click-loading&, .phx-click-loading &);
+@custom-variant phx-submit-loading (.phx-submit-loading&, .phx-submit-loading &);
+@custom-variant phx-change-loading (.phx-change-loading&, .phx-change-loading &);
+
+/* Make LiveView wrapper divs transparent for layout */
+[data-phx-session] { display: contents }
+
+/* Focused assessment mode: while a proctored assessment is active (fullscreen /
+   started), hide the app side-nav for a distraction-free, harder-to-navigate
+   exam view. Toggled by the AssessmentIntegrity JS hook via a body class. */
+body.assessment-focus [data-app-sidenav] {
+  display: none !important;
+}
+
+/* The header "Exit" button appears only in focus mode (when the side-nav is
+   hidden), so students always have a deliberate way out of the exam. */
+.assessment-exit {
+  display: none;
+}
+
+body.assessment-focus .assessment-exit {
+  display: inline-flex;
+}
+
+/* Custom mobile sidebar animations */
+#mobile-sidebar {
+  transition: transform 0.3s ease-in-out;
+}
+
+#mobile-sidebar.translate-x-0 {
+  transform: translateX(0);
+}
+
+#mobile-sidebar.-translate-x-full {
+  transform: translateX(-100%);
+}
+
+/* Ensure mobile sidebar is hidden by default */
+@media (max-width: 1023px) {
+  #mobile-sidebar:not(.translate-x-0) {
+    transform: translateX(-100%);
+  }
+}
+
+/* Prevent horizontal scroll on mobile */
+@media (max-width: 1023px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Improve table responsiveness */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Page transition animation for behavioral assessment */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Message slide-in animation (right to left) */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.animate-slide-in {
+  animation: slideIn 0.4s ease-out forwards;
+}
+
+/* ===========================================================================
+   Print / PDF report styles
+   ===========================================================================
+   The "Download Report" button on each assessment result page calls
+   window.print(); these rules turn the on-screen view into a clean PDF
+   when the user picks "Save as PDF" in the browser print dialog.
+
+   Strategy: we explicitly hide known page-chrome elements (sidebars, nav,
+   toasts, action buttons marked `data-print-hide`). We DO NOT try to
+   "hide everything except .report-printable" — that approach collapses
+   the ancestor DOM nodes too, taking the report with it.
+*/
+
+/* The print-only header (with Vyaasa logo) is hidden on screen */
+/* This file is for your main application CSS */

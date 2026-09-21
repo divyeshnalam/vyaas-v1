@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AI8 Profile Report</title>
+    <style><%= raw(common_styles()) %></style>
+    <style>
+      .competency { margin-bottom: 11px; }
+      .competency:last-child { margin-bottom: 0; }
+      .competency .head {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10pt;
+        color: #374151;
+        margin-bottom: 4px;
+      }
+      .competency .head .label { font-weight: 600; color: #111827; }
+      .competency .bar {
+        width: 100%;
+        background: #e5e7eb;
+        border-radius: 9999px;
+        height: 7px;
+        overflow: hidden;
+      }
+      .competency .bar > span { display: block; height: 100%; border-radius: 9999px; }
+      .hl { border-radius: 8px; padding: 10px 12px; }
+      .hl .k { font-size: 8.5pt; text-transform: uppercase; letter-spacing: .04em; font-weight: 700; }
+      .hl .v { font-size: 10.5pt; font-weight: 600; color: #111827; margin-top: 2px; }
+      .hl .s { font-size: 9pt; color: #6b7280; }
+    </style>
+  </head>
+  <body>
+    <div class="report">
+      <.report_watermark watermark_src={@watermark_src} />
+      <.report_header logo_src={@logo_src} student={@student} generated_at_display={@generated_at_display} />
+
+      <section class="title-block">
+        <div>
+          <h1>AI8 Profile</h1>
+          <p>Eight career-readiness dimensions, aggregated across all your assessments.</p>
+        </div>
+        <span
+          class="badge"
+          style={"background: #{tint_hex(@performance_color)}; color: #{color_hex(@performance_color)};"}
+        >
+          {@performance_label}
+        </span>
+      </section>
+
+      <section class="card">
+        <h3>Overall AI8 Index</h3>
+        <div class="score-hero">
+          <div class="gauge">
+            <svg width="130" height="130" viewBox="0 0 130 130">
+              <circle cx="65" cy="65" r="55" stroke="#e5e7eb" stroke-width="10" fill="none" />
+              <circle
+                cx="65"
+                cy="65"
+                r="55"
+                stroke={color_hex(@performance_color)}
+                stroke-width="10"
+                fill="none"
+                stroke-linecap="round"
+                stroke-dasharray={Float.round(2 * 3.14159 * 55, 2)}
+                stroke-dashoffset={Float.round(2 * 3.14159 * 55 * (1 - clamp_pct(@index) / 100), 2)}
+              />
+            </svg>
+            <div class="center">
+              <div class="score">{@index}<small style="font-size: 9pt; color: #6b7280; font-weight: 500;">/100</small></div>
+              <div class="label">AI8 Index</div>
+            </div>
+          </div>
+          <div class="score-summary">
+            <div class="pct" style={"color: #{color_hex(@performance_color)};"}>{@index}%</div>
+            <div class="verdict" style={"color: #{color_hex(@performance_color)};"}>{@performance_label}</div>
+            <div :if={@completion} class="sub">{@completion}% of the AI8 assessed so far.</div>
+          </div>
+        </div>
+      </section>
+
+      <section :if={@strength || @opportunity} class="card">
+        <div class="grid-2">
+          <div :if={@strength} class="hl" style="background: #dcfce7;">
+            <div class="k" style="color: #15803d;">Top strength</div>
+            <div class="v">{@strength.label}</div>
+            <div class="s">{@strength.score}/100 — keep leaning on this.</div>
+          </div>
+          <div :if={@opportunity} class="hl" style="background: #ffedd5;">
+            <div class="k" style="color: #c2410c;">Best opportunity</div>
+            <div class="v">{@opportunity.label}</div>
+            <div class="s">{@opportunity.score}/100 — fastest way to raise your index.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Eight Dimensions</h3>
+        <%= for d <- @dims do %>
+          <div class="competency">
+            <div class="head">
+              <span class="label">{d.label}</span>
+              <span>{d.score}/100</span>
+            </div>
+            <div class="bar">
+              <span style={"width: #{clamp_pct(d.score)}%; background: #{color_hex(perf_color(d.score))};"}></span>
+            </div>
+          </div>
+        <% end %>
+      </section>
+
+      <.report_footer generated_at_display={@generated_at_display} />
+    </div>
+  </body>
+</html>

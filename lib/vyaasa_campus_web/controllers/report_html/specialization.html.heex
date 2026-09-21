@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Specialization-wise Performance Report</title>
+    <style><%= raw(common_styles()) %></style>
+    <style>
+      table.spec {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 9.5pt;
+      }
+      table.spec thead th {
+        background: #f97316;
+        color: #ffffff;
+        padding: 7px 6px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 8.5pt;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+      table.spec thead th.num { text-align: center; }
+      table.spec tbody td {
+        padding: 6px;
+        border-bottom: 1px solid #f3f4f6;
+        vertical-align: top;
+      }
+      table.spec tbody td.num { text-align: center; }
+      table.spec tbody tr:nth-child(even) { background: #fafafa; }
+      .dept-name { font-weight: 600; color: #111827; }
+      .topper { color: #374151; }
+      .topper-score { font-weight: 700; color: #1d4ed8; }
+      .highest-score { font-weight: 700; color: #059669; }
+    </style>
+  </head>
+  <body>
+    <div class="report">
+      <.report_watermark watermark_src={@watermark_src} />
+      <.report_header logo_src={@logo_src} student={@student} generated_at_display={@generated_at_display} />
+
+      <section class="title-block">
+        <div>
+          <h1>Specialization-wise Performance</h1>
+          <p>{@subtitle}</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <table class="spec">
+          <thead>
+            <tr>
+              <th>Specialization</th>
+              <th class="num">Students</th>
+              <th class="num">Scored</th>
+              <th class="num">Highest AI8</th>
+              <th>Topper</th>
+              <th class="num">Topper Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr :for={d <- @department_stats}>
+              <td class="dept-name">{d.department}</td>
+              <td class="num">{d.student_count}</td>
+              <td class="num">{d.scored_count}</td>
+              <td class="num highest-score">{d.highest_ai8_score || "-"}</td>
+              <td class="topper">{(d.topper && d.topper.name) || "-"}</td>
+              <td class="num topper-score">{(d.topper && d.topper.score) || "-"}</td>
+            </tr>
+            <tr :if={@department_stats == []}>
+              <td colspan="6" style="text-align: center; color: #9ca3af; padding: 24px;">
+                No specialization data available.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <.report_footer generated_at_display={@generated_at_display} />
+    </div>
+  </body>
+</html>

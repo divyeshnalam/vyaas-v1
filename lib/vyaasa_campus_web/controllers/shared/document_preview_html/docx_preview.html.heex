@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{@filename} · Vyaasa</title>
+    <style>
+      :root { color-scheme: light; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #f8f9fa;
+        font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+        color: #212529;
+        padding: 1.5rem;
+      }
+      .wrap { max-width: 52rem; margin: 0 auto; }
+      .bar {
+        display: flex; align-items: center; justify-content: space-between;
+        gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;
+      }
+      .name { font-size: 1rem; font-weight: 600; margin: 0; word-break: break-all; }
+      .meta { font-size: 0.75rem; color: #6c757d; margin: 0.15rem 0 0; }
+      .btn {
+        display: inline-block; padding: 0.5rem 1.1rem; background: #FF8B00;
+        color: #fff; text-decoration: none; border-radius: 0.25rem;
+        font-size: 0.85rem; font-weight: 500; white-space: nowrap;
+      }
+      .btn:hover { opacity: 0.9; }
+      .notice {
+        background: #FFF4E5; border: 1px solid #FFD9A8; color: #8A5300;
+        border-radius: 0.375rem; padding: 0.7rem 0.9rem;
+        font-size: 0.8rem; line-height: 1.5; margin-bottom: 1rem;
+      }
+      .page {
+        background: #fff; border: 1px solid #e9ecef; border-radius: 0.375rem;
+        padding: 2.5rem 3rem;
+      }
+      .page p {
+        margin: 0 0 0.65rem; font-size: 0.9rem; line-height: 1.65;
+        color: #212529; white-space: pre-wrap; word-wrap: break-word;
+      }
+      .page p:last-child { margin-bottom: 0; }
+      @media (max-width: 40rem) { .page { padding: 1.5rem 1.25rem; } }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="bar">
+        <div>
+          <p class="name">{@filename}</p>
+          <p class="meta">Word document · text-only preview</p>
+        </div>
+        <a href={@download_url} class="btn">Download original</a>
+      </div>
+
+      <p class="notice">
+        Browsers can't display Word documents directly, so this is the text read out of the
+        file. Layout, fonts, tables and images are not shown — download the original if you
+        need to see the resume exactly as the student formatted it.
+      </p>
+
+      <div class="page">
+        <p :for={paragraph <- @paragraphs}>{paragraph}</p>
+      </div>
+    </div>
+  </body>
+</html>

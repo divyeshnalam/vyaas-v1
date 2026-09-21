@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Psychometric Assessment Report</title>
+    <style><%= raw(common_styles()) %></style>
+    <style>
+      .trait-row { margin-bottom: 10px; }
+      .trait-row:last-child { margin-bottom: 0; }
+      .trait-line {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10pt;
+        color: #374151;
+        margin-bottom: 4px;
+      }
+      .trait-line .label { font-weight: 600; color: #111827; }
+      .trait-bar {
+        width: 100%;
+        background: #e5e7eb;
+        border-radius: 9999px;
+        height: 7px;
+        overflow: hidden;
+      }
+      .trait-bar > span { display: block; height: 100%; border-radius: 9999px; background: #6366f1; }
+      .factor {
+        border-left: 3px solid #f97316;
+        padding: 6px 10px;
+        margin-bottom: 10px;
+        background: #fff7ed;
+        border-radius: 0 6px 6px 0;
+      }
+      .factor h4 { margin: 0 0 2px; font-size: 10.5pt; color: #111827; }
+      .factor .score { font-size: 9pt; color: #6b7280; }
+    </style>
+  </head>
+  <body>
+    <div class="report">
+      <.report_watermark watermark_src={@watermark_src} />
+      <.report_header logo_src={@logo_src} student={@student} generated_at_display={@generated_at_display} />
+
+      <section class="title-block">
+        <div>
+          <h1>Psychometric Assessment</h1>
+          <p>Big Five Personality Profile</p>
+        </div>
+        <span class="badge" style={"background: #{tint_hex(@performance_color)}; color: #{color_hex(@performance_color)};"}>
+          {@performance_label}
+        </span>
+      </section>
+
+      <section class="card">
+        <h3>Overall Score</h3>
+        <div class="score-hero">
+          <div class="gauge">
+            <svg width="130" height="130" viewBox="0 0 130 130">
+              <circle cx="65" cy="65" r="55" stroke="#e5e7eb" stroke-width="10" fill="none" />
+              <circle cx="65" cy="65" r="55" stroke={color_hex(@performance_color)} stroke-width="10" fill="none"
+                stroke-linecap="round" stroke-dasharray={Float.round(2 * 3.14159 * 55, 2)}
+                stroke-dashoffset={Float.round(2 * 3.14159 * 55 * (1 - clamp_pct(@overall_score) / 100), 2)} />
+            </svg>
+            <div class="center">
+              <div class="score">{@overall_score}<small style="font-size: 9pt; color: #6b7280; font-weight: 500;">/100</small></div>
+              <div class="label">Score</div>
+            </div>
+          </div>
+          <div class="score-summary" style="font-size: 9.5pt; color: #4b5563; line-height: 1.7;">
+            <div>Work Ethics &amp; Reliability (80%): <strong>{@composites.work_ethics}/100</strong></div>
+            <div>Teamwork &amp; Collaboration (10%): <strong>{@composites.collaboration}/100</strong></div>
+            <div>Initiative &amp; Leadership (10%): <strong>{@composites.leadership}/100</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section :if={@overall_summary && @overall_summary != ""} class="card">
+        <h3>Overall Summary</h3>
+        <div class="prose"><p>{@overall_summary}</p></div>
+      </section>
+
+      <section class="card">
+        <h3>Big Five Factor Scores</h3>
+        <%= for {label, val} <- [
+          {"Openness to Experience", @scores.openness},
+          {"Conscientiousness", @scores.conscientiousness},
+          {"Extraversion", @scores.extraversion},
+          {"Agreeableness", @scores.agreeableness},
+          {"Emotional Stability", @scores.neuroticism}
+        ] do %>
+          <div class="trait-row">
+            <div class="trait-line">
+              <span class="label">{label}</span>
+              <span>{(val && :erlang.float_to_binary(val * 1.0, decimals: 1)) || "—"} / 5.0</span>
+            </div>
+            <div class="trait-bar">
+              <span style={"width: #{if val, do: Float.round(val / 5.0 * 100, 1), else: 0}%;"}></span>
+            </div>
+          </div>
+        <% end %>
+      </section>
+
+      <section :if={is_list(@factor_reports) and @factor_reports != []} class="card">
+        <h3>Factor Reports</h3>
+        <div :for={factor <- @factor_reports} class="factor">
+          <h4>{factor["factor"]}</h4>
+          <div class="score">Score: {factor["score"]} / 5.0</div>
+          <div :if={factor["interpretation"]} class="prose" style="margin-top: 4px;">
+            <p>{factor["interpretation"]}</p>
+          </div>
+          <div :if={is_list(factor["strengths"]) and factor["strengths"] != []}>
+            <h4 class="section">Strengths</h4>
+            <ul class="tight">
+              <li :for={s <- factor["strengths"]}>{s}</li>
+            </ul>
+          </div>
+          <div :if={is_list(factor["risks"]) and factor["risks"] != []}>
+            <h4 class="section">Risks</h4>
+            <ul class="tight">
+              <li :for={r <- factor["risks"]}>{r}</li>
+            </ul>
+          </div>
+          <div :if={is_list(factor["suggestions"]) and factor["suggestions"] != []}>
+            <h4 class="section">Suggestions</h4>
+            <ul class="tight">
+              <li :for={s <- factor["suggestions"]}>{s}</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section :if={@strengths != [] or @development_areas != []} class="card">
+        <div class="grid-2">
+          <div>
+            <h4 class="section">Key Strengths</h4>
+            <ul class="tight">
+              <li :for={s <- @strengths}>{s}</li>
+              <li :if={@strengths == []} style="color: #9ca3af;">—</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="section">Development Areas</h4>
+            <ul class="tight">
+              <li :for={d <- @development_areas}>{d}</li>
+              <li :if={@development_areas == []} style="color: #9ca3af;">—</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section :if={@suggestions != []} class="card">
+        <h3>Recommendations</h3>
+        <ul class="tight">
+          <li :for={s <- @suggestions}>{s}</li>
+        </ul>
+      </section>
+
+      <.report_footer generated_at_display={@generated_at_display} />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,830 @@
+{
+  "scenarios": [
+    {
+      "scenario_id": 1,
+      "title": "Adapting to New Technology Under Pressure",
+      "description": "Imagine you joined a new project team where everyone is using a technology or tool you've never worked with before (e.g., a new programming language, design tool, or project management software). The project deadline is tight, and you need to contribute effectively despite your unfamiliarity. How would you handle this situation?",
+      "dimensions": ["adaptability", "collaboration", "work_ethics"],
+      "difficulty": "medium",
+      "category": "technical_learning",
+      "follow_up_hints": [
+        "Ask about specific learning strategies they used",
+        "Probe for how they balanced learning with project delivery",
+        "Inquire about how they sought help from team members",
+        "Explore what challenges they faced and how they overcame them",
+        "Ask about the outcome and what they learned from the experience"
+      ]
+    },
+    {
+      "scenario_id": 2,
+      "title": "Team Conflict Resolution",
+      "description": "You're working on a group project, and two of your teammates have a disagreement about the direction of the work. The tension is affecting the team's productivity and morale. One teammate wants to take a more creative, risky approach, while the other prefers a safe, proven method. As a team member, what would you do in this situation?",
+      "dimensions": ["collaboration", "initiative", "cultural_fit"],
+      "difficulty": "medium",
+      "category": "conflict_management",
+      "follow_up_hints": [
+        "Ask how they identified the root cause of the conflict",
+        "Probe for specific actions they took to mediate",
+        "Inquire about their communication approach with both parties",
+        "Explore how they balanced different perspectives",
+        "Ask about the impact on team dynamics and project outcome"
+      ]
+    },
+    {
+      "scenario_id": 3,
+      "title": "Taking Initiative Beyond Requirements",
+      "description": "You're working on an assignment or project where you notice a potential improvement or an additional feature that wasn't part of the original requirements. However, implementing this would require extra time and effort, and you're not sure if others will appreciate it. What would you do in this situation?",
+      "dimensions": ["initiative", "work_ethics", "adaptability"],
+      "difficulty": "medium",
+      "category": "proactivity",
+      "follow_up_hints": [
+        "Ask about their decision-making process",
+        "Probe for how they communicated the idea to stakeholders",
+        "Inquire about how they managed time and priorities",
+        "Explore what feedback they received",
+        "Ask about the value added and lessons learned"
+      ]
+    },
+    {
+      "scenario_id": 4,
+      "title": "Managing Multiple Deadlines",
+      "description": "You have three major assignments due in the same week - a technical project, a research paper, and a group presentation. Each requires significant time and effort. One team member suggests splitting the group presentation work unevenly to help you manage your load. How would you approach this situation?",
+      "dimensions": ["work_ethics", "collaboration", "adaptability"],
+      "difficulty": "hard",
+      "category": "time_management",
+      "follow_up_hints": [
+        "Ask about their prioritization strategy",
+        "Probe for how they communicated with all stakeholders",
+        "Inquire about time management techniques used",
+        "Explore how they ensured quality wasn't compromised",
+        "Ask about what they learned about their work capacity"
+      ]
+    },
+    {
+      "scenario_id": 5,
+      "title": "Dealing with Underperforming Team Member",
+      "description": "You're part of a team project where one member consistently misses deadlines and produces low-quality work. The project grade affects everyone. Other team members are frustrated and want to report this person to the professor. What would you do?",
+      "dimensions": ["collaboration", "cultural_fit", "initiative"],
+      "difficulty": "hard",
+      "category": "team_dynamics",
+      "follow_up_hints": [
+        "Ask about their initial approach to the team member",
+        "Probe for how they balanced empathy with accountability",
+        "Inquire about communication strategies used",
+        "Explore alternatives they considered",
+        "Ask about the final outcome for the team and individual"
+      ]
+    },
+    {
+      "scenario_id": 6,
+      "title": "Learning from Failure",
+      "description": "You worked hard on a project or assignment, but the result was disappointing - you received a poor grade, failed to meet objectives, or the outcome didn't match your expectations. How did you handle this setback?",
+      "dimensions": ["adaptability", "cultural_fit", "work_ethics"],
+      "difficulty": "medium",
+      "category": "resilience",
+      "follow_up_hints": [
+        "Ask about their immediate emotional response",
+        "Probe for how they analyzed what went wrong",
+        "Inquire about specific actions taken to improve",
+        "Explore how they applied learnings to future work",
+        "Ask about changes in their approach or mindset"
+      ]
+    },
+    {
+      "scenario_id": 7,
+      "title": "Leading Without Authority",
+      "description": "In a group project where no formal leader was assigned, you noticed the team was disorganized and progress was slow. No one was taking charge. What would you do in this situation?",
+      "dimensions": ["initiative", "collaboration", "adaptability"],
+      "difficulty": "medium",
+      "category": "leadership",
+      "follow_up_hints": [
+        "Ask how they identified the need for leadership",
+        "Probe for how they gained team buy-in without formal authority",
+        "Inquire about specific organizational systems they implemented",
+        "Explore challenges faced when stepping up",
+        "Ask about team response and project outcome"
+      ]
+    },
+    {
+      "scenario_id": 8,
+      "title": "Balancing Quality and Speed",
+      "description": "Your team is working on a project with a tight deadline. You notice that to meet the deadline, the team is planning to cut corners that could affect the quality or functionality of the final deliverable. What would you do?",
+      "dimensions": ["work_ethics", "initiative", "collaboration"],
+      "difficulty": "hard",
+      "category": "quality_standards",
+      "follow_up_hints": [
+        "Ask about the specific trade-offs they identified",
+        "Probe for how they communicated quality concerns",
+        "Inquire about alternative solutions they proposed",
+        "Explore how they influenced the team's decision",
+        "Ask about the final decision and its impact"
+      ]
+    },
+    {
+      "scenario_id": 9,
+      "title": "Handling Constructive Criticism",
+      "description": "You presented your work (a project, assignment, or idea) to your professor, mentor, or team, and received critical feedback that was unexpected and somewhat harsh. How did you respond to this feedback?",
+      "dimensions": ["cultural_fit", "adaptability", "work_ethics"],
+      "difficulty": "easy",
+      "category": "feedback_reception",
+      "follow_up_hints": [
+        "Ask about their initial reaction to the feedback",
+        "Probe for how they processed the criticism",
+        "Inquire about specific changes they made based on feedback",
+        "Explore how they maintained relationship with the critic",
+        "Ask about long-term impact on their work or approach"
+      ]
+    },
+    {
+      "scenario_id": 10,
+      "title": "Cross-Cultural Collaboration",
+      "description": "You were assigned to work with team members from different cultural backgrounds or with different working styles than yours. There were misunderstandings about communication styles, work expectations, or project approaches. How did you navigate this?",
+      "dimensions": ["cultural_fit", "collaboration", "adaptability"],
+      "difficulty": "medium",
+      "category": "diversity_inclusion",
+      "follow_up_hints": [
+        "Ask about specific cultural differences they encountered",
+        "Probe for how they built understanding across differences",
+        "Inquire about adjustments they made to their approach",
+        "Explore what they learned about cultural sensitivity",
+        "Ask about the impact on team effectiveness"
+      ]
+    },
+    {
+      "scenario_id": 11,
+      "title": "Identifying and Solving a Problem",
+      "description": "You noticed a recurring problem in your academic department, student organization, or project team that others seemed to accept as 'just how things are.' What did you do about it?",
+      "dimensions": ["initiative", "work_ethics", "adaptability"],
+      "difficulty": "hard",
+      "category": "problem_solving",
+      "follow_up_hints": [
+        "Ask how they identified this was a problem worth solving",
+        "Probe for their problem analysis approach",
+        "Inquire about stakeholders they engaged",
+        "Explore obstacles faced during implementation",
+        "Ask about measurable impact of their solution"
+      ]
+    },
+    {
+      "scenario_id": 12,
+      "title": "Adapting to Remote/Hybrid Work",
+      "description": "Your team had to suddenly shift to remote or hybrid work mode (perhaps during COVID-19 or for another reason). This created challenges in communication, collaboration, and productivity. How did you adapt?",
+      "dimensions": ["adaptability", "collaboration", "initiative"],
+      "difficulty": "easy",
+      "category": "work_environment",
+      "follow_up_hints": [
+        "Ask about specific challenges they faced",
+        "Probe for tools or systems they adopted",
+        "Inquire about how they maintained team connection",
+        "Explore personal work habits they changed",
+        "Ask about unexpected benefits they discovered"
+      ]
+    },
+    {
+      "scenario_id": 13,
+      "title": "Ethical Dilemma",
+      "description": "You discovered that a classmate or team member was planning to cheat, plagiarize, or otherwise act unethically on an assignment or exam. This could benefit the team's grade or their individual grade. What would you do?",
+      "dimensions": ["work_ethics", "cultural_fit", "initiative"],
+      "difficulty": "hard",
+      "category": "ethics_integrity",
+      "follow_up_hints": [
+        "Ask about the factors they considered in their decision",
+        "Probe for how they balanced competing values",
+        "Inquire about who they consulted or how they decided",
+        "Explore the approach they took with the individual",
+        "Ask about the outcome and their reflection on it"
+      ]
+    },
+    {
+      "scenario_id": 14,
+      "title": "Mentoring or Teaching Others",
+      "description": "A classmate, junior student, or team member was struggling with a concept or skill that you had mastered. They asked for your help, but you also had your own deadlines and commitments. How did you handle this?",
+      "dimensions": ["collaboration", "cultural_fit", "work_ethics"],
+      "difficulty": "medium",
+      "category": "mentorship",
+      "follow_up_hints": [
+        "Ask about how they decided to help or not",
+        "Probe for their teaching or mentoring approach",
+        "Inquire about how they managed their own time",
+        "Explore what they learned from teaching",
+        "Ask about the impact on the other person's performance"
+      ]
+    },
+    {
+      "scenario_id": 15,
+      "title": "Pivoting When Plan Fails",
+      "description": "You had a detailed plan for how to complete a project or achieve a goal, but midway through, you realized your approach wasn't working and you needed to change direction significantly. Describe this situation and what you did.",
+      "dimensions": ["adaptability", "initiative", "work_ethics"],
+      "difficulty": "medium",
+      "category": "flexibility",
+      "follow_up_hints": [
+        "Ask how they recognized the plan wasn't working",
+        "Probe for their decision-making process for the pivot",
+        "Inquire about resources or help they sought",
+        "Explore emotional challenges of changing direction",
+        "Ask about the new approach and its effectiveness"
+      ]
+    },
+    {
+      "scenario_id": 16,
+      "title": "Managing Interpersonal Conflict",
+      "description": "You had a personal conflict with a teammate, classmate, or colleague that affected your ability to work together effectively. This wasn't about the work itself, but about personality clash or interpersonal issues. How did you handle it?",
+      "dimensions": ["cultural_fit", "collaboration", "adaptability"],
+      "difficulty": "hard",
+      "category": "interpersonal_skills",
+      "follow_up_hints": [
+        "Ask about the root cause of the conflict",
+        "Probe for their approach to resolving it",
+        "Inquire about perspective-taking or empathy shown",
+        "Explore what compromises were made",
+        "Ask about the current status of the relationship"
+      ]
+    },
+    {
+      "scenario_id": 17,
+      "title": "Taking Responsibility for Mistake",
+      "description": "You made a significant mistake on a project or assignment that affected others - your team, your grade, or project outcomes. How did you handle this situation?",
+      "dimensions": ["work_ethics", "cultural_fit", "collaboration"],
+      "difficulty": "medium",
+      "category": "accountability",
+      "follow_up_hints": [
+        "Ask how they discovered or acknowledged the mistake",
+        "Probe for their communication to affected parties",
+        "Inquire about corrective actions taken",
+        "Explore how they prevented similar mistakes",
+        "Ask about what they learned about accountability"
+      ]
+    },
+    {
+      "scenario_id": 18,
+      "title": "Balancing Multiple Roles",
+      "description": "You were managing multiple significant commitments simultaneously - perhaps academics, part-time work, extracurricular leadership, and personal responsibilities. Describe a time when these competing demands created conflict and how you managed it.",
+      "dimensions": ["work_ethics", "adaptability", "initiative"],
+      "difficulty": "hard",
+      "category": "work_life_balance",
+      "follow_up_hints": [
+        "Ask about their prioritization framework",
+        "Probe for communication with stakeholders",
+        "Inquire about trade-offs they made",
+        "Explore support systems they leveraged",
+        "Ask about long-term changes to their approach"
+      ]
+    },
+    {
+      "scenario_id": 19,
+      "title": "Advocating for Change",
+      "description": "You believed a policy, process, or decision in your academic or organizational setting was unfair or ineffective, but those in authority disagreed with you. How did you approach advocating for your position?",
+      "dimensions": ["initiative", "cultural_fit", "collaboration"],
+      "difficulty": "hard",
+      "category": "influence",
+      "follow_up_hints": [
+        "Ask how they built their case for change",
+        "Probe for their persuasion strategy",
+        "Inquire about how they navigated power dynamics",
+        "Explore how they handled resistance or rejection",
+        "Ask about the outcome and lessons learned"
+      ]
+    },
+    {
+      "scenario_id": 20,
+      "title": "Supporting Team Member in Crisis",
+      "description": "A team member was going through a personal crisis (health issue, family emergency, mental health challenge) that affected their ability to contribute to a shared project. How did you and the team respond?",
+      "dimensions": ["cultural_fit", "collaboration", "work_ethics"],
+      "difficulty": "medium",
+      "category": "empathy_support",
+      "follow_up_hints": [
+        "Ask about how they learned about the situation",
+        "Probe for the balance between empathy and project needs",
+        "Inquire about specific support they provided",
+        "Explore how work was redistributed",
+        "Ask about the impact on team dynamics and outcomes"
+      ]
+    },
+    {
+      "scenario_id": 21,
+      "title": "Presenting to Senior Stakeholders",
+      "description": "You were asked to present your project or research findings to senior professors, executives, or external stakeholders. You had limited time to prepare, and the audience had high expectations. How did you approach this challenge?",
+      "dimensions": ["adaptability", "work_ethics", "initiative"],
+      "difficulty": "hard",
+      "category": "communication",
+      "follow_up_hints": [
+        "Ask about their preparation strategy",
+        "Probe for how they tailored content to the audience",
+        "Inquire about handling unexpected questions",
+        "Explore their confidence-building techniques",
+        "Ask about feedback received and lessons learned"
+      ]
+    },
+    {
+      "scenario_id": 22,
+      "title": "Handling Resource Constraints",
+      "description": "Your team was assigned a project but discovered you lacked essential resources - budget, equipment, software licenses, or expert guidance. How did you proceed?",
+      "dimensions": ["initiative", "adaptability", "collaboration"],
+      "difficulty": "medium",
+      "category": "resourcefulness",
+      "follow_up_hints": [
+        "Ask about alternative resources they identified",
+        "Probe for creative solutions they developed",
+        "Inquire about stakeholder negotiations",
+        "Explore trade-offs they had to make",
+        "Ask about the final outcome given constraints"
+      ]
+    },
+    {
+      "scenario_id": 23,
+      "title": "Implementing Feedback You Disagreed With",
+      "description": "You received feedback or instructions from a professor, supervisor, or client that you fundamentally disagreed with. You believed their suggested approach was wrong or would lead to poor results. What did you do?",
+      "dimensions": ["cultural_fit", "work_ethics", "collaboration"],
+      "difficulty": "hard",
+      "category": "professional_disagreement",
+      "follow_up_hints": [
+        "Ask about how they evaluated the feedback objectively",
+        "Probe for how they communicated their concerns",
+        "Inquire about the outcome of their approach",
+        "Explore what they learned about professional disagreement",
+        "Ask about the final decision and its results"
+      ]
+    },
+    {
+      "scenario_id": 24,
+      "title": "Managing Scope Creep",
+      "description": "Your project started with clear requirements, but stakeholders kept adding new features or changing requirements mid-project. The timeline remained the same. How did you handle this?",
+      "dimensions": ["work_ethics", "collaboration", "initiative"],
+      "difficulty": "hard",
+      "category": "project_management",
+      "follow_up_hints": [
+        "Ask about how they tracked changing requirements",
+        "Probe for communication strategies with stakeholders",
+        "Inquire about prioritization decisions made",
+        "Explore impact negotiation with stakeholders",
+        "Ask about the final project outcome"
+      ]
+    },
+    {
+      "scenario_id": 25,
+      "title": "Building Team Morale",
+      "description": "Your team was going through a difficult phase - facing setbacks, conflicts, or low motivation. Team morale was low and affecting productivity. What actions did you take to improve the situation?",
+      "dimensions": ["collaboration", "initiative", "cultural_fit"],
+      "difficulty": "medium",
+      "category": "team_building",
+      "follow_up_hints": [
+        "Ask about how they assessed team morale",
+        "Probe for specific morale-building initiatives",
+        "Inquire about individual vs. team approaches",
+        "Explore resistance or challenges faced",
+        "Ask about measurable improvements in team dynamics"
+      ]
+    },
+    {
+      "scenario_id": 26,
+      "title": "Learning from a Strong Competitor",
+      "description": "In a competition, hackathon, or academic contest, you faced a competitor or rival team that was clearly more skilled or experienced. How did you approach this situation?",
+      "dimensions": ["adaptability", "cultural_fit", "initiative"],
+      "difficulty": "medium",
+      "category": "competition",
+      "follow_up_hints": [
+        "Ask about their initial reaction to the competition",
+        "Probe for strategies they used despite the disadvantage",
+        "Inquire about what they learned from observing competitors",
+        "Explore how they maintained motivation",
+        "Ask about the outcome and post-competition reflection"
+      ]
+    },
+    {
+      "scenario_id": 27,
+      "title": "Negotiating Roles and Responsibilities",
+      "description": "In a group project, there was disagreement about who should do what. Team members had different preferences, skills, and availability. How did you navigate this negotiation?",
+      "dimensions": ["collaboration", "work_ethics", "cultural_fit"],
+      "difficulty": "medium",
+      "category": "role_clarity",
+      "follow_up_hints": [
+        "Ask about their approach to the negotiation",
+        "Probe for how they assessed team members' strengths",
+        "Inquire about compromises they made personally",
+        "Explore how they ensured fairness in distribution",
+        "Ask about the effectiveness of the final arrangement"
+      ]
+    },
+    {
+      "scenario_id": 28,
+      "title": "Dealing with Ambiguous Instructions",
+      "description": "You received an assignment or project with vague or incomplete instructions. When you asked for clarification, you were told to 'figure it out' or 'use your judgment.' How did you proceed?",
+      "dimensions": ["initiative", "adaptability", "work_ethics"],
+      "difficulty": "medium",
+      "category": "ambiguity_tolerance",
+      "follow_up_hints": [
+        "Ask about their approach to defining the scope",
+        "Probe for assumptions they made and validated",
+        "Inquire about checkpoints they established",
+        "Explore risks they identified and managed",
+        "Ask about the final outcome and stakeholder satisfaction"
+      ]
+    },
+    {
+      "scenario_id": 29,
+      "title": "Onboarding to Existing Project",
+      "description": "You joined a project that was already in progress. The team had established workflows, inside jokes, and you felt like an outsider. How did you integrate yourself into the team?",
+      "dimensions": ["adaptability", "collaboration", "initiative"],
+      "difficulty": "easy",
+      "category": "integration",
+      "follow_up_hints": [
+        "Ask about their first steps to understand the project",
+        "Probe for how they built relationships with team members",
+        "Inquire about value they added despite joining late",
+        "Explore challenges of catching up",
+        "Ask about their contribution to team dynamics"
+      ]
+    },
+    {
+      "scenario_id": 30,
+      "title": "Managing Technical Debt",
+      "description": "Your team inherited code, documentation, or a project with significant technical debt or quality issues from a previous team. You had to deliver new features while dealing with these legacy problems. How did you approach this?",
+      "dimensions": ["work_ethics", "initiative", "adaptability"],
+      "difficulty": "hard",
+      "category": "technical_challenges",
+      "follow_up_hints": [
+        "Ask about how they assessed the technical debt",
+        "Probe for their strategy to balance fixes vs. new features",
+        "Inquire about stakeholder communication",
+        "Explore documentation or knowledge transfer efforts",
+        "Ask about long-term improvements made"
+      ]
+    },
+    {
+      "scenario_id": 31,
+      "title": "Celebrating Team Success",
+      "description": "Your team achieved a significant milestone or completed a challenging project successfully. How did you ensure the team's efforts were recognized and celebrated appropriately?",
+      "dimensions": ["collaboration", "cultural_fit", "initiative"],
+      "difficulty": "easy",
+      "category": "recognition",
+      "follow_up_hints": [
+        "Ask about specific celebration initiatives they took",
+        "Probe for how they ensured all contributions were recognized",
+        "Inquire about individual vs. team recognition",
+        "Explore impact on team morale and future motivation",
+        "Ask about feedback from team members"
+      ]
+    },
+    {
+      "scenario_id": 32,
+      "title": "Working with Difficult Personality",
+      "description": "You had to work closely with someone whose working style or personality was very different from yours - perhaps they were overly critical, uncommunicative, or domineering. How did you maintain a productive working relationship?",
+      "dimensions": ["cultural_fit", "collaboration", "adaptability"],
+      "difficulty": "hard",
+      "category": "difficult_relationships",
+      "follow_up_hints": [
+        "Ask about how they understood the other person's perspective",
+        "Probe for adaptation strategies they employed",
+        "Inquire about boundaries they set",
+        "Explore what they learned about working with diverse personalities",
+        "Ask about the quality of work produced together"
+      ]
+    },
+    {
+      "scenario_id": 33,
+      "title": "Making Data-Driven Decisions",
+      "description": "Your team had to make an important decision with multiple options. There was data available but it was incomplete or contradictory. Some team members wanted to go with gut feeling. How did you approach this decision?",
+      "dimensions": ["initiative", "work_ethics", "collaboration"],
+      "difficulty": "medium",
+      "category": "decision_making",
+      "follow_up_hints": [
+        "Ask about how they analyzed available data",
+        "Probe for how they handled data gaps or contradictions",
+        "Inquire about their decision-making framework",
+        "Explore how they built consensus",
+        "Ask about the outcome of the decision"
+      ]
+    },
+    {
+      "scenario_id": 34,
+      "title": "Handling Last-Minute Changes",
+      "description": "Just before a major deadline or presentation, you received significant feedback requiring substantial changes. You had very little time to implement these changes. What did you do?",
+      "dimensions": ["adaptability", "work_ethics", "collaboration"],
+      "difficulty": "hard",
+      "category": "crisis_management",
+      "follow_up_hints": [
+        "Ask about their immediate response and planning",
+        "Probe for how they prioritized changes",
+        "Inquire about resources or help they mobilized",
+        "Explore how they managed stress and maintained quality",
+        "Ask about the final outcome and lessons learned"
+      ]
+    },
+    {
+      "scenario_id": 35,
+      "title": "Building New Skill for Project",
+      "description": "Your project required a skill that no one on the team possessed. You volunteered to learn this skill to help the team. Describe this experience and how you approached it.",
+      "dimensions": ["initiative", "adaptability", "work_ethics"],
+      "difficulty": "medium",
+      "category": "skill_development",
+      "follow_up_hints": [
+        "Ask about their learning strategy and resources",
+        "Probe for how they balanced learning with contributing",
+        "Inquire about challenges in learning under pressure",
+        "Explore how they shared knowledge with the team",
+        "Ask about proficiency achieved and project impact"
+      ]
+    },
+    {
+      "scenario_id": 36,
+      "title": "Dealing with Micromanagement",
+      "description": "You had a professor, supervisor, or team lead who micromanaged your work - checking in constantly, questioning every decision, or prescribing exactly how to do tasks. How did you handle this situation?",
+      "dimensions": ["cultural_fit", "work_ethics", "collaboration"],
+      "difficulty": "hard",
+      "category": "management_style",
+      "follow_up_hints": [
+        "Ask about their understanding of the micromanagement cause",
+        "Probe for strategies to build trust",
+        "Inquire about communication approaches they tried",
+        "Explore impact on their work quality and satisfaction",
+        "Ask about the evolution of the relationship"
+      ]
+    },
+    {
+      "scenario_id": 37,
+      "title": "Facilitating Productive Meetings",
+      "description": "Your team's meetings were inefficient - going off-topic, running long, or lacking clear outcomes. You decided to improve the meeting effectiveness. What did you do?",
+      "dimensions": ["initiative", "collaboration", "work_ethics"],
+      "difficulty": "medium",
+      "category": "meeting_management",
+      "follow_up_hints": [
+        "Ask about meeting problems they identified",
+        "Probe for specific improvements they implemented",
+        "Inquire about how they gained buy-in for changes",
+        "Explore resistance they encountered",
+        "Ask about measurable improvements in meeting quality"
+      ]
+    },
+    {
+      "scenario_id": 38,
+      "title": "Managing Client/Stakeholder Expectations",
+      "description": "A client, professor, or stakeholder had unrealistic expectations about what your team could deliver in the given timeframe or with available resources. How did you manage their expectations?",
+      "dimensions": ["collaboration", "work_ethics", "cultural_fit"],
+      "difficulty": "hard",
+      "category": "stakeholder_management",
+      "follow_up_hints": [
+        "Ask about how they identified expectations as unrealistic",
+        "Probe for their communication strategy",
+        "Inquire about alternatives or compromises offered",
+        "Explore stakeholder reaction and negotiation",
+        "Ask about the final agreement and its outcome"
+      ]
+    },
+    {
+      "scenario_id": 39,
+      "title": "Resolving Technical Disagreement",
+      "description": "Your team had a technical disagreement about the best approach, technology, or solution for a problem. People had strong opinions based on different experiences. How did you help resolve this?",
+      "dimensions": ["collaboration", "initiative", "work_ethics"],
+      "difficulty": "medium",
+      "category": "technical_decision",
+      "follow_up_hints": [
+        "Ask about different perspectives in the disagreement",
+        "Probe for how they facilitated objective evaluation",
+        "Inquire about criteria used for decision-making",
+        "Explore how they maintained team cohesion",
+        "Ask about validation of the final decision"
+      ]
+    },
+    {
+      "scenario_id": 40,
+      "title": "Recovering from Public Failure",
+      "description": "You experienced a public failure - a demo that didn't work, a presentation that went poorly, or a project outcome that fell short in front of important stakeholders. How did you recover from this?",
+      "dimensions": ["adaptability", "cultural_fit", "work_ethics"],
+      "difficulty": "hard",
+      "category": "failure_recovery",
+      "follow_up_hints": [
+        "Ask about their immediate response to the failure",
+        "Probe for how they analyzed what went wrong",
+        "Inquire about stakeholder communication after failure",
+        "Explore steps taken to prevent recurrence",
+        "Ask about long-term impact on their confidence and approach"
+      ]
+    },
+    {
+      "scenario_id": 41,
+      "title": "Bridging Knowledge Gaps",
+      "description": "Your team had members with very different knowledge levels - some were experts, others were beginners. This created communication challenges and unequal workload distribution. How did you address this?",
+      "dimensions": ["collaboration", "cultural_fit", "initiative"],
+      "difficulty": "medium",
+      "category": "knowledge_sharing",
+      "follow_up_hints": [
+        "Ask about how they identified the knowledge gaps",
+        "Probe for strategies to enable knowledge transfer",
+        "Inquire about task allocation approach",
+        "Explore impact on team dynamics and learning",
+        "Ask about overall team capability improvement"
+      ]
+    },
+    {
+      "scenario_id": 42,
+      "title": "Maintaining Quality Under Budget Cuts",
+      "description": "Your project faced budget cuts or resource reductions partway through. You were expected to deliver the same quality outcome with fewer resources. How did you adapt?",
+      "dimensions": ["adaptability", "work_ethics", "initiative"],
+      "difficulty": "hard",
+      "category": "resource_management",
+      "follow_up_hints": [
+        "Ask about their impact assessment of the cuts",
+        "Probe for creative solutions to maintain quality",
+        "Inquire about stakeholder communication",
+        "Explore trade-offs they had to make",
+        "Ask about the final outcome given constraints"
+      ]
+    },
+    {
+      "scenario_id": 43,
+      "title": "Introducing Process Improvement",
+      "description": "You identified an inefficient process or workflow in your team, organization, or project. You wanted to introduce a better approach, but people were resistant to change. How did you drive this improvement?",
+      "dimensions": ["initiative", "collaboration", "adaptability"],
+      "difficulty": "hard",
+      "category": "change_management",
+      "follow_up_hints": [
+        "Ask about how they built the case for change",
+        "Probe for their change management strategy",
+        "Inquire about addressing resistance",
+        "Explore pilot testing or incremental adoption",
+        "Ask about adoption rate and measurable benefits"
+      ]
+    },
+    {
+      "scenario_id": 44,
+      "title": "Working Across Time Zones",
+      "description": "Your team members were distributed across different time zones, making real-time collaboration difficult. Important decisions needed to be made, but scheduling meetings that worked for everyone was nearly impossible. How did you manage this?",
+      "dimensions": ["collaboration", "adaptability", "initiative"],
+      "difficulty": "medium",
+      "category": "distributed_teams",
+      "follow_up_hints": [
+        "Ask about communication tools and strategies they adopted",
+        "Probe for how they ensured everyone stayed informed",
+        "Inquire about asynchronous collaboration methods",
+        "Explore challenges of building team cohesion remotely",
+        "Ask about project outcomes despite time zone challenges"
+      ]
+    },
+    {
+      "scenario_id": 45,
+      "title": "Dealing with Imposter Syndrome",
+      "description": "You were selected for a competitive program, project, or opportunity where you felt you didn't belong or weren't qualified compared to others. How did you handle these feelings while still performing well?",
+      "dimensions": ["cultural_fit", "adaptability", "work_ethics"],
+      "difficulty": "medium",
+      "category": "self_confidence",
+      "follow_up_hints": [
+        "Ask about specific situations that triggered these feelings",
+        "Probe for strategies they used to manage self-doubt",
+        "Inquire about support systems they leveraged",
+        "Explore how it affected their performance",
+        "Ask about how their perspective evolved over time"
+      ]
+    },
+    {
+      "scenario_id": 46,
+      "title": "Streamlining Documentation",
+      "description": "Your project had poor or outdated documentation, making it hard for new members to contribute or for the team to maintain consistency. You took the initiative to improve this. Describe what you did.",
+      "dimensions": ["initiative", "work_ethics", "collaboration"],
+      "difficulty": "medium",
+      "category": "documentation",
+      "follow_up_hints": [
+        "Ask about the documentation problems they identified",
+        "Probe for their documentation strategy and tools",
+        "Inquire about how they got team buy-in",
+        "Explore sustainability of the documentation system",
+        "Ask about measurable benefits to the team"
+      ]
+    },
+    {
+      "scenario_id": 47,
+      "title": "Handling Scope Without Authority",
+      "description": "You saw your project going off track or expanding beyond reasonable scope, but you weren't the project leader and had no formal authority to enforce scope. What did you do?",
+      "dimensions": ["initiative", "collaboration", "work_ethics"],
+      "difficulty": "hard",
+      "category": "influence_without_authority",
+      "follow_up_hints": [
+        "Ask about how they raised their concerns",
+        "Probe for their approach to influencing without authority",
+        "Inquire about data or evidence they used",
+        "Explore reaction from the team leader",
+        "Ask about the ultimate project scope and outcome"
+      ]
+    },
+    {
+      "scenario_id": 48,
+      "title": "Transitioning Leadership Roles",
+      "description": "You were leading a project or team, and then needed to hand over leadership to someone else (perhaps you were graduating, changing roles, or the project evolved). How did you ensure a smooth transition?",
+      "dimensions": ["collaboration", "work_ethics", "initiative"],
+      "difficulty": "medium",
+      "category": "succession_planning",
+      "follow_up_hints": [
+        "Ask about their transition planning approach",
+        "Probe for knowledge transfer methods used",
+        "Inquire about how they selected or prepared the successor",
+        "Explore challenges during the handover",
+        "Ask about the project's success after their departure"
+      ]
+    },
+    {
+      "scenario_id": 49,
+      "title": "Balancing Innovation and Stability",
+      "description": "Your team wanted to try innovative, cutting-edge approaches for a project, but stakeholders were risk-averse and preferred proven methods. You had to find the right balance. How did you approach this?",
+      "dimensions": ["initiative", "work_ethics", "collaboration"],
+      "difficulty": "hard",
+      "category": "innovation_management",
+      "follow_up_hints": [
+        "Ask about the innovative ideas they proposed",
+        "Probe for how they addressed stakeholder concerns",
+        "Inquire about risk mitigation strategies",
+        "Explore the compromise or hybrid approach used",
+        "Ask about the outcome and lessons about innovation"
+      ]
+    },
+    {
+      "scenario_id": 50,
+      "title": "Creating Inclusive Environment",
+      "description": "You noticed that certain team members were being excluded from discussions, their ideas weren't being heard, or they seemed disengaged. You wanted to create a more inclusive team environment. What actions did you take?",
+      "dimensions": ["cultural_fit", "collaboration", "initiative"],
+      "difficulty": "medium",
+      "category": "inclusion",
+      "follow_up_hints": [
+        "Ask about how they identified the exclusion",
+        "Probe for specific inclusive practices they implemented",
+        "Inquire about conversations with both included and excluded members",
+        "Explore resistance or challenges faced",
+        "Ask about measurable changes in team dynamics and engagement"
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "3.0",
+    "last_updated": "2025-01-15",
+    "total_scenarios": 50,
+    "coverage": {
+      "adaptability": 28,
+      "collaboration": 35,
+      "initiative": 30,
+      "work_ethics": 32,
+      "cultural_fit": 27
+    },
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 27,
+      "hard": 19
+    },
+    "category_distribution": {
+      "technical_learning": 3,
+      "conflict_management": 3,
+      "proactivity": 2,
+      "time_management": 2,
+      "team_dynamics": 4,
+      "resilience": 2,
+      "leadership": 3,
+      "quality_standards": 2,
+      "feedback_reception": 1,
+      "diversity_inclusion": 3,
+      "problem_solving": 2,
+      "work_environment": 2,
+      "ethics_integrity": 2,
+      "mentorship": 2,
+      "flexibility": 2,
+      "interpersonal_skills": 2,
+      "accountability": 2,
+      "work_life_balance": 1,
+      "influence": 2,
+      "empathy_support": 1,
+      "communication": 1,
+      "resourcefulness": 1,
+      "professional_disagreement": 1,
+      "project_management": 2,
+      "team_building": 1,
+      "competition": 1,
+      "role_clarity": 1,
+      "ambiguity_tolerance": 1,
+      "integration": 1,
+      "technical_challenges": 1,
+      "recognition": 1,
+      "difficult_relationships": 1,
+      "decision_making": 1,
+      "crisis_management": 1,
+      "skill_development": 1,
+      "management_style": 1,
+      "meeting_management": 1,
+      "stakeholder_management": 1,
+      "technical_decision": 1,
+      "failure_recovery": 1,
+      "knowledge_sharing": 1,
+      "resource_management": 1,
+      "change_management": 1,
+      "distributed_teams": 1,
+      "self_confidence": 1,
+      "documentation": 1,
+      "influence_without_authority": 1,
+      "succession_planning": 1,
+      "innovation_management": 1,
+      "inclusion": 1
+    },
+    "scenario_selection_guidelines": {
+      "random_selection": "Select 3 random scenarios ensuring diverse dimension coverage",
+      "difficulty_progression": "Start with easy/medium, progress to medium/hard",
+      "dimension_balanced": "Ensure selected scenarios cover at least 4 of 5 dimensions",
+      "category_diversity": "Avoid selecting multiple scenarios from same category"
+    },
+    "notes": "Comprehensive 50-scenario library for fresh graduate behavioral assessment. Covers diverse situations: technical challenges, team dynamics, personal growth, ethical dilemmas, leadership, and interpersonal skills. Each scenario generates 3-4 STAR-based follow-up questions. Categories help filter scenarios by topic. Difficulty ratings support adaptive assessment."
+  }
+}

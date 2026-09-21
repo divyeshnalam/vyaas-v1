@@ -1,0 +1,683 @@
+defmodule VyaasaCampusWeb.Student.ProfileCompletion.StepRenderers do
+  @moduledoc """
+  Step rendering functions for the profile completion LiveView.
+  """
+
+  use Phoenix.Component
+  import VyaasaCampusWeb.Components.UI
+
+  alias VyaasaCampusWeb.Student.ProfileCompletion.{
+    AtsScore,
+    DocumentUploads,
+    ExternalLinks,
+    JobRoleSection,
+    SkillsSection,
+    Verification,
+    WorkExperience
+  }
+
+  def render_step_1(assigns) do
+    ~H"""
+    <div>
+      <!-- Step Header -->
+      <div class="mb-8">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900">Step 1: Profile Creation</h2>
+            <p class="text-gray-600 mt-1">Please provide your personal and academic information</p>
+          </div>
+          <div class="text-right">
+            <div class="text-sm text-gray-500">Completion: <%= @completion_percentage %>%</div>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="w-full bg-gray-200 rounded-full h-2 mt-4">
+          <div class="bg-orange-600 h-2 rounded-full transition-all duration-300" style={"width: #{@completion_percentage}%"}></div>
+        </div>
+      </div>
+
+      <!-- Student Info Display -->
+      <%= if @student do %>
+        <div class="mb-8 bg-gray-50 rounded-lg p-6 border border-gray-200">
+          <div class="flex items-center">
+            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+              <span class="text-white font-bold text-xl">
+                <%= String.first(@student.first_name || "S") %>
+              </span>
+            </div>
+            <div class="ml-4 flex-1">
+              <h3 class="text-lg font-semibold text-gray-900">
+                <%= "#{@student.first_name} #{@student.last_name}" %>
+                <span class="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                  <span class="w-1.5 h-1.5 bg-green-400 rounded-full mr-1"></span>
+                  Active
+                </span>
+              </h3>
+              <p class="text-sm text-gray-600"><%= @student.email %> • <%= @student.registration_id %></p>
+            </div>
+            <div>
+              <button class="inline-flex items-center px-3 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
+                Request Edit Access
+              </button>
+            </div>
+          </div>
+        </div>
+      <% end %>
+
+      <!-- Education Details -->
+      <div class="mb-8">
+        <h3 class="text-lg font-medium text-orange-600 mb-6 flex items-center">
+          <.icon name="hero-academic-cap" class="w-5 h-5 mr-2" />
+          Education Details
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-1">
+            <label class="block text-sm font-medium text-gray-700">College Name</label>
+            <div class="text-sm text-gray-900 font-medium">
+              <%= (@student && @student.degree) || "Not Available" %>
+            </div>
+          </div>
+
+          <div class="space-y-1">
+            <label class="block text-sm font-medium text-gray-700">Year of Passing</label>
+            <div class="text-sm text-gray-900 font-medium">
+              <%= (@student && @student.year_of_passing) || "Not Available" %>
+            </div>
+          </div>
+
+          <div class="space-y-1">
+            <label class="block text-sm font-medium text-gray-700">Degree</label>
+            <div class="text-sm text-gray-900 font-medium">
+              <%= (@student && @student.specialization) || "Not Available" %>
+            </div>
+          </div>
+
+          <div class="space-y-1">
+            <label class="block text-sm font-medium text-gray-700">CGPA/Percentage</label>
+            <div class="text-sm text-gray-900 font-medium">
+              <%= if @student && @student.cgpa do %>
+                <%= @student.cgpa %> CGPA
+              <% else %>
+                Not Available
+              <% end %>
+            </div>
+          </div>
+
+          <div class="md:col-span-2 space-y-1">
+            <label class="block text-sm font-medium text-gray-700">Institution</label>
+            <div class="text-sm text-gray-900 font-medium">
+              <%= @tenant_alias %> Institute
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Documents Upload -->
+      <DocumentUploads.render_documents_section uploads={@uploads} />
+
+      <!-- Preferred Job Role Selection -->
+      <div class="mb-8">
+        <h3 class="text-lg font-medium text-orange-600 mb-4 flex items-center">
+          <.icon name="hero-briefcase" class="w-5 h-5 mr-2" />
+          Preferred Job Role
+        </h3>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+          <%= for role <- @job_roles do %>
+            <button
+              phx-click="update_job_role"
+              phx-value-job_role={role}
+              class={[
+                "px-4 py-3 text-sm border rounded-lg transition-colors text-left",
+                if(@preferred_job_role == role, do: "bg-orange-100 border-orange-300 text-orange-700", else: "bg-white border-gray-300 text-gray-700 hover:bg-gray-50")
+              ]}
+            >
+              <%= role %>
+            </button>
+          <% end %>
+        </div>
+
+        <%= if @preferred_job_role != "" do %>
+          <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
+            <div class="flex items-center">
+              <.icon name="hero-check-circle" class="w-5 h-5 text-orange-600 mr-2" />
+              <span class="text-sm text-orange-800">Selected: <strong><%= @preferred_job_role %></strong></span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex justify-end pt-6 border-t border-gray-200">
+        <button
+          phx-click="next_step"
+          class="inline-flex items-center px-6 py-3 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          Next - Step 2
+          <.icon name="hero-arrow-right" class="w-4 h-4 ml-2" />
+        </button>
+      </div>
+    </div>
+    """
+  end
+
+  def render_step_2(assigns) do
+    ~H"""
+    <div class="max-w-5xl mx-auto">
+      <!-- Dashboard Header -->
+      <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900">Resume Analysis Dashboard</h1>
+      </div>
+
+      <!-- ATS Score Section -->
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">ATS Score</h2>
+
+        <!-- Circular Score Display -->
+        <div class="flex justify-center items-center mb-8">
+          <div class="relative w-48 h-48">
+            <!-- Background Circle -->
+            <svg class="w-48 h-48 transform -rotate-90" viewBox="0 0 200 200">
+              <circle
+                cx="100"
+                cy="100"
+                r="80"
+                stroke="#e5e7eb"
+                stroke-width="20"
+                fill="none"
+              />
+              <!-- Progress Circle -->
+              <circle
+                cx="100"
+                cy="100"
+                r="80"
+                stroke="#22c55e"
+                stroke-width="20"
+                fill="none"
+                stroke-dasharray={502.4}
+                stroke-dashoffset={502.4 * (1 - (get_ats_final_score(assigns) / 100))}
+                stroke-linecap="round"
+              />
+            </svg>
+            <!-- Score Text -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+              <div class="text-5xl font-bold text-gray-900">
+                <%= get_ats_final_score(assigns) %><span class="text-3xl">/100</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Score Metrics -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <!-- Completeness -->
+          <div
+            phx-click="toggle_feedback"
+            phx-value-section="completeness"
+            class="bg-white border border-gray-200 rounded-lg p-4 cursor-pointer hover:shadow-md transition-shadow"
+          >
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="font-medium text-gray-700">Completeness</span>
+              </div>
+              <span class={"text-xs font-semibold px-2 py-1 rounded #{get_rating_class(get_completeness_score(assigns))}"}>
+                <%= get_rating(get_completeness_score(assigns)) %>
+              </span>
+            </div>
+            <div class={"text-3xl font-bold mb-1 #{get_score_color(get_completeness_score(assigns))}"}>
+              <%= get_completeness_score(assigns) %><span class="text-lg text-gray-500">/100</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+              <div class={"h-2 rounded-full #{get_bar_color(get_completeness_score(assigns))}"} style={"width: #{get_completeness_score(assigns)}%"}></div>
+            </div>
+            <p class="text-xs text-gray-500"><%= get_completeness_message(assigns) %></p>
+            <p class="text-xs text-blue-600 mt-2 flex items-center gap-1">
+              Click for details
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </p>
+          </div>
+
+          <!-- Relevance -->
+          <div
+            phx-click="toggle_feedback"
+            phx-value-section="relevance"
+            class="bg-white border border-gray-200 rounded-lg p-4 cursor-pointer hover:shadow-md transition-shadow"
+          >
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                <span class="font-medium text-gray-700">Relevance</span>
+              </div>
+              <span class={"text-xs font-semibold px-2 py-1 rounded #{get_rating_class(get_relevance_score(assigns))}"}>
+                <%= get_rating(get_relevance_score(assigns)) %>
+              </span>
+            </div>
+            <div class={"text-3xl font-bold mb-1 #{get_score_color(get_relevance_score(assigns))}"}>
+              <%= get_relevance_score(assigns) %><span class="text-lg text-gray-500">/100</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+              <div class={"h-2 rounded-full #{get_bar_color(get_relevance_score(assigns))}"} style={"width: #{get_relevance_score(assigns)}%"}></div>
+            </div>
+            <p class="text-xs text-gray-500"><%= get_relevance_message(assigns) %></p>
+            <p class="text-xs text-blue-600 mt-2 flex items-center gap-1">
+              Click for details
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </p>
+          </div>
+
+          <!-- Sanity Check -->
+          <div
+            phx-click="toggle_feedback"
+            phx-value-section="sanity"
+            class="bg-white border border-gray-200 rounded-lg p-4 cursor-pointer hover:shadow-md transition-shadow"
+          >
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+                <span class="font-medium text-gray-700">Sanity Check</span>
+              </div>
+              <span class={"text-xs font-semibold px-2 py-1 rounded #{get_rating_class(get_sanity_score(assigns))}"}>
+                <%= get_rating(get_sanity_score(assigns)) %>
+              </span>
+            </div>
+            <div class={"text-3xl font-bold mb-1 #{get_score_color(get_sanity_score(assigns))}"}>
+              <%= get_sanity_score(assigns) %><span class="text-lg text-gray-500">/100</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+              <div class={"h-2 rounded-full #{get_bar_color(get_sanity_score(assigns))}"} style={"width: #{get_sanity_score(assigns)}%"}></div>
+            </div>
+            <p class="text-xs text-gray-500"><%= get_sanity_message(assigns) %></p>
+            <p class="text-xs text-blue-600 mt-2 flex items-center gap-1">
+              Click for details
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </p>
+          </div>
+        </div>
+
+        <!-- Feedback Sections -->
+        <%= if Map.get(assigns, :show_completeness_feedback, false) do %>
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="font-bold text-blue-900 flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Completeness Feedback
+              </h3>
+              <button phx-click="toggle_feedback" phx-value-section="completeness" class="text-blue-600 hover:text-blue-800">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <%= if has_completeness_feedback?(assigns) do %>
+              <ul class="space-y-2">
+                <%= for item <- get_completeness_feedback(assigns) do %>
+                  <li class="flex items-start gap-2 text-sm text-blue-800">
+                    <span class="text-blue-600 mt-0.5">●</span>
+                    <span><%= item %></span>
+                  </li>
+                <% end %>
+              </ul>
+            <% else %>
+              <p class="text-sm text-blue-700">All sections are complete. Great job!</p>
+            <% end %>
+          </div>
+        <% end %>
+
+        <%= if Map.get(assigns, :show_relevance_feedback, false) do %>
+          <div class="bg-purple-50 border border-purple-200 rounded-lg p-6 mb-6">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="font-bold text-purple-900 flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                Relevance Feedback
+              </h3>
+              <button phx-click="toggle_feedback" phx-value-section="relevance" class="text-purple-600 hover:text-purple-800">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <%= if has_relevance_feedback?(assigns) do %>
+              <div class="space-y-3">
+                <%= if get_relevance_justification(assigns) do %>
+                  <div>
+                    <p class="text-sm font-semibold text-purple-800 mb-1">Analysis:</p>
+                    <p class="text-sm text-purple-700"><%= get_relevance_justification(assigns) %></p>
+                  </div>
+                <% end %>
+                <%= if has_matching_keywords?(assigns) do %>
+                  <div>
+                    <p class="text-sm font-semibold text-purple-800 mb-1">Matching Keywords:</p>
+                    <div class="flex flex-wrap gap-2">
+                      <%= for keyword <- get_matching_keywords(assigns) do %>
+                        <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs"><%= keyword %></span>
+                      <% end %>
+                    </div>
+                  </div>
+                <% end %>
+                <%= if has_missing_keywords?(assigns) do %>
+                  <div>
+                    <p class="text-sm font-semibold text-purple-800 mb-1">Missing Keywords:</p>
+                    <div class="flex flex-wrap gap-2">
+                      <%= for keyword <- get_missing_keywords(assigns) do %>
+                        <span class="px-2 py-1 bg-red-100 text-red-800 rounded text-xs"><%= keyword %></span>
+                      <% end %>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+            <% else %>
+              <p class="text-sm text-purple-700">Your skills are highly relevant to the selected job role.</p>
+            <% end %>
+          </div>
+        <% end %>
+
+        <%= if Map.get(assigns, :show_sanity_feedback, false) do %>
+          <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-6">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="font-bold text-yellow-900 flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+                Sanity Check Feedback
+              </h3>
+              <button phx-click="toggle_feedback" phx-value-section="sanity" class="text-yellow-600 hover:text-yellow-800">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <%= if has_sanity_issues?(assigns) do %>
+              <ul class="space-y-2">
+                <%= for issue <- get_sanity_issues(assigns) do %>
+                  <li class="flex items-start gap-2 text-sm text-yellow-800">
+                    <span class="text-yellow-600 mt-0.5">⚠</span>
+                    <span><%= issue %></span>
+                  </li>
+                <% end %>
+              </ul>
+            <% else %>
+              <p class="text-sm text-yellow-700">No inconsistencies found in your profile. Everything looks good!</p>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+
+      <!-- Professional Summary -->
+      <%= if has_professional_summary?(assigns) do %>
+        <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+          <h3 class="font-bold text-gray-900 mb-2">Professional Summary</h3>
+          <p class="text-sm text-gray-500 mb-3">Summary</p>
+          <p class="text-gray-700 leading-relaxed"><%= get_professional_summary(assigns) %></p>
+        </div>
+      <% end %>
+
+      <!-- Skills Section -->
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+        <div class="flex items-start gap-2 mb-4">
+          <svg class="w-5 h-5 text-amber-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+          </svg>
+          <h3 class="font-bold text-gray-900">Skills (comma-separated)</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Technical Skills -->
+          <div>
+            <h4 class="font-semibold text-gray-700 mb-3">Technical Skills</h4>
+            <div class="bg-gray-50 border border-gray-200 rounded p-4">
+              <%= if has_technical_skills?(assigns) do %>
+                <p class="text-sm text-gray-700 leading-relaxed">
+                  <%= get_technical_skills(assigns) |> Enum.join(", ") %>
+                </p>
+              <% else %>
+                <p class="text-sm text-gray-400 italic">No technical skills added</p>
+              <% end %>
+            </div>
+          </div>
+
+          <!-- Non-Technical Skills -->
+          <div>
+            <h4 class="font-semibold text-gray-700 mb-3">Non-Technical Skills</h4>
+            <div class="bg-gray-50 border border-gray-200 rounded p-4">
+              <%= if has_non_technical_skills?(assigns) do %>
+                <p class="text-sm text-gray-700 leading-relaxed">
+                  <%= get_non_technical_skills(assigns) |> Enum.join(", ") %>
+                </p>
+              <% else %>
+                <p class="text-sm text-gray-400 italic">No non-technical skills added</p>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex justify-between pt-6 border-t border-gray-200">
+        <button
+          phx-click="prev_step"
+          class="px-6 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Back
+        </button>
+        <button
+          phx-click="next_step"
+          class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+        >
+          Next - Step 3
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    """
+  end
+
+  # Helper functions - Updated to use assigns map
+
+  defp get_ats_final_score(assigns) do
+    get_in(assigns, [:ats_data, :ats_detail, "final_score"]) || 0
+  end
+
+  defp get_completeness_score(assigns) do
+    get_in(assigns, [:ats_data, :completeness, :score]) || 0
+  end
+
+  defp get_relevance_score(assigns) do
+    get_in(assigns, [:ats_data, :relevance, :score]) || 0
+  end
+
+  defp get_sanity_score(assigns) do
+    get_in(assigns, [:ats_data, :ats_detail, "sanity", "final_sanity_score"]) || 0
+  end
+
+  defp get_completeness_message(assigns) do
+    feedback = get_in(assigns, [:ats_data, :completeness, :feedback]) || []
+
+    if length(feedback) == 0 do
+      "All major sections present"
+    else
+      "Some sections missing"
+    end
+  end
+
+  defp get_relevance_message(assigns) do
+    justification = get_in(assigns, [:ats_data, :relevance, :justification])
+
+    if justification do
+      String.split(justification, ".") |> List.first() || "Skills need better alignment"
+    else
+      "Skills need better alignment"
+    end
+  end
+
+  defp get_sanity_message(assigns) do
+    issues = get_in(assigns, [:ats_data, :ats_detail, "sanity", "breakdown"]) || %{}
+
+    total_issues =
+      Enum.reduce(issues, 0, fn {_key, value}, acc ->
+        issue_list = Map.get(value, "issues", [])
+        acc + length(issue_list)
+      end)
+
+    if total_issues == 0 do
+      "No major inconsistencies found"
+    else
+      "#{total_issues} issues found"
+    end
+  end
+
+  defp get_areas_for_improvement(assigns) do
+    feedback = get_in(assigns, [:ats_data, :completeness, :feedback]) || []
+    sanity_issues = get_in(assigns, [:ats_data, :ats_detail, "sanity", "breakdown"]) || %{}
+
+    sanity_messages =
+      Enum.flat_map(sanity_issues, fn {_key, value} ->
+        Map.get(value, "issues", [])
+      end)
+
+    feedback ++ sanity_messages
+  end
+
+  defp has_areas_for_improvement?(assigns) do
+    improvements = get_areas_for_improvement(assigns)
+    length(improvements) > 0
+  end
+
+  defp get_professional_summary(assigns) do
+    summary = get_in(assigns, [:ats_data, :ats_detail, "groq_data", "Professional_Summary"]) || []
+
+    case summary do
+      [first | _] when is_binary(first) -> first
+      _ -> nil
+    end
+  end
+
+  defp has_professional_summary?(assigns) do
+    get_professional_summary(assigns) != nil
+  end
+
+  defp get_technical_skills(assigns) do
+    get_in(assigns, [:ats_data, :skills, :technical]) || []
+  end
+
+  defp has_technical_skills?(assigns) do
+    skills = get_technical_skills(assigns)
+    is_list(skills) && length(skills) > 0
+  end
+
+  defp get_non_technical_skills(assigns) do
+    get_in(assigns, [:ats_data, :skills, :non_technical]) || []
+  end
+
+  defp has_non_technical_skills?(assigns) do
+    skills = get_non_technical_skills(assigns)
+    is_list(skills) && length(skills) > 0
+  end
+
+  # Helper function to get rating text based on score
+  defp get_rating(score) when score >= 85, do: "Excellent"
+  defp get_rating(score) when score >= 70, do: "Good"
+  defp get_rating(score) when score >= 50, do: "Fair"
+  defp get_rating(_score), do: "Needs Work"
+
+  # Helper function to get rating badge color classes
+  defp get_rating_class(score) when score >= 85, do: "bg-green-100 text-green-800"
+  defp get_rating_class(score) when score >= 70, do: "bg-yellow-100 text-yellow-800"
+  defp get_rating_class(score) when score >= 50, do: "bg-orange-100 text-orange-800"
+  defp get_rating_class(_score), do: "bg-red-100 text-red-800"
+
+  # Helper function to get score text color
+  defp get_score_color(score) when score >= 85, do: "text-green-600"
+  defp get_score_color(score) when score >= 70, do: "text-yellow-600"
+  defp get_score_color(score) when score >= 50, do: "text-orange-600"
+  defp get_score_color(_score), do: "text-red-600"
+
+  # Helper function to get progress bar color
+  defp get_bar_color(score) when score >= 85, do: "bg-green-600"
+  defp get_bar_color(score) when score >= 70, do: "bg-yellow-600"
+  defp get_bar_color(score) when score >= 50, do: "bg-orange-600"
+  defp get_bar_color(_score), do: "bg-red-600"
+
+  # Completeness feedback helpers
+  defp has_completeness_feedback?(assigns) do
+    feedback = get_in(assigns, [:ats_data, :completeness, :feedback]) || []
+    is_list(feedback) && length(feedback) > 0
+  end
+
+  defp get_completeness_feedback(assigns) do
+    get_in(assigns, [:ats_data, :completeness, :feedback]) || []
+  end
+
+  # Relevance feedback helpers
+  defp has_relevance_feedback?(assigns) do
+    get_relevance_justification(assigns) != nil ||
+      has_matching_keywords?(assigns) ||
+      has_missing_keywords?(assigns)
+  end
+
+  defp get_relevance_justification(assigns) do
+    get_in(assigns, [:ats_data, :relevance, :justification])
+  end
+
+  defp has_matching_keywords?(assigns) do
+    keywords = get_matching_keywords(assigns)
+    is_list(keywords) && length(keywords) > 0
+  end
+
+  defp get_matching_keywords(assigns) do
+    get_in(assigns, [:ats_data, :relevance, :matching_keywords]) || []
+  end
+
+  defp has_missing_keywords?(assigns) do
+    keywords = get_missing_keywords(assigns)
+    is_list(keywords) && length(keywords) > 0
+  end
+
+  defp get_missing_keywords(assigns) do
+    get_in(assigns, [:ats_data, :relevance, :missing_keywords]) || []
+  end
+
+  # Sanity check feedback helpers
+  defp has_sanity_issues?(assigns) do
+    issues = get_sanity_issues(assigns)
+    length(issues) > 0
+  end
+
+  defp get_sanity_issues(assigns) do
+    sanity_breakdown = get_in(assigns, [:ats_data, :ats_detail, "sanity", "breakdown"]) || %{}
+
+    Enum.flat_map(sanity_breakdown, fn {_key, value} ->
+      Map.get(value, "issues", [])
+    end)
+  end
+
+  def render_step_3(assigns) do
+    ~H"""
+    <Verification.render_verification_section assigns={assigns} />
+    """
+  end
+end

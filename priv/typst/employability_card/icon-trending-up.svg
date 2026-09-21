@@ -1,0 +1,12 @@
+<!-- Extracted from CredentialsComponent.trending_up_icon/1 (metric row: "potential"). -->
+<svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.2959 8.39453V11.018" stroke="#EF6C00" stroke-width="1.04938" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M8.39453 7.68164V11.0192" stroke="#EF6C00" stroke-width="1.04938" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M10.4932 5.59082V11.0182" stroke="#EF6C00" stroke-width="1.04938" stroke-linecap="round" stroke-linejoin="round" />
+  <path
+    d="M11.5427 1.57324L7.00617 6.10972C6.9818 6.13415 6.95285 6.15354 6.92098 6.16676C6.88911 6.17999 6.85494 6.1868 6.82043 6.1868C6.78593 6.1868 6.75176 6.17999 6.71988 6.16676C6.68801 6.15354 6.65906 6.13415 6.63469 6.10972L4.90741 4.38244C4.85821 4.33326 4.79149 4.30563 4.72193 4.30563C4.65237 4.30563 4.58565 4.33326 4.53645 4.38244L1.04883 7.86954"
+    stroke="#EF6C00" stroke-width="1.04938" stroke-linecap="round" stroke-linejoin="round"
+  />
+  <path d="M2.09863 9.6875V11.0186" stroke="#EF6C00" stroke-width="1.04938" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M4.19727 7.68945V11.0181" stroke="#EF6C00" stroke-width="1.04938" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

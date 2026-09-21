@@ -1,0 +1,47 @@
+# Build and dependency artifacts (recreated by `mix deps.get` / `mix compile`)
+/_build/
+/deps/
+/cover/
+/doc/
+/.fetch
+*.ez
+erl_crash.dump
+/tmp/
+
+# Elixir language server / editor caches
+/.elixir_ls/
+/.lexical/
+/.vscode/
+/.idea/
+
+# Generated on crash by the VM
+erl_crash.dump
+
+# Node / frontend
+/assets/node_modules/
+npm-debug.log*
+
+# Compiled/digested static assets (recreated by `mix assets.deploy`)
+/priv/static/assets/
+/priv/static/cache_manifest.json
+/priv/static/*-????????????????????????????????.*
+*.gz
+
+# User-uploaded files (runtime data, may contain personal info)
+/priv/uploads/
+/priv/static/uploads/
+
+# Logs
+/log/
+*.log
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.secret.exs
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini

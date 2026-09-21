@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MCQ Assessment Report</title>
+    <style><%= raw(common_styles()) %></style>
+    <style>
+      .breakdown {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+      }
+      .stat {
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 10px 8px;
+        text-align: center;
+      }
+      .stat .num { font-size: 16pt; font-weight: 700; line-height: 1; }
+      .stat .k { font-size: 8pt; color: #6b7280; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.4px; }
+      .stat.correct  { background: #f0fdf4; border-color: #bbf7d0; }
+      .stat.correct .num { color: #16a34a; }
+      .stat.wrong    { background: #fef2f2; border-color: #fecaca; }
+      .stat.wrong .num { color: #dc2626; }
+      .stat.skip     { background: #f9fafb; border-color: #e5e7eb; }
+      .stat.skip .num { color: #4b5563; }
+      .stat.neg      { background: #fff7ed; border-color: #fed7aa; }
+      .stat.neg .num { color: #ea580c; }
+      .stat.final    { background: #eff6ff; border-color: #bfdbfe; }
+      .stat.final .num { color: #2563eb; }
+    </style>
+  </head>
+  <body>
+    <div class="report">
+      <.report_watermark watermark_src={@watermark_src} />
+      <.report_header logo_src={@logo_src} student={@student} generated_at_display={@generated_at_display} />
+
+      <section class="title-block">
+        <div>
+          <h1>MCQ Assessment Report</h1>
+          <p>{@assessment.title}</p>
+        </div>
+        <span
+          class="badge"
+          style={"background: #{tint_hex(@performance_color)}; color: #{color_hex(@performance_color)};"}
+        >
+          {@performance_label}
+        </span>
+      </section>
+
+      <section class="card">
+        <h3>Score Overview</h3>
+        <div class="score-hero">
+          <div class="gauge">
+            <svg width="130" height="130" viewBox="0 0 130 130">
+              <circle cx="65" cy="65" r="55" stroke="#e5e7eb" stroke-width="10" fill="none" />
+              <circle
+                cx="65"
+                cy="65"
+                r="55"
+                stroke={color_hex(@performance_color)}
+                stroke-width="10"
+                fill="none"
+                stroke-linecap="round"
+                stroke-dasharray={Float.round(2 * 3.14159 * 55, 2)}
+                stroke-dashoffset={Float.round(2 * 3.14159 * 55 * (1 - @percentage / 100), 2)}
+              />
+            </svg>
+            <div class="center">
+              <div class="score">{round(@score)}/{@total_marks}</div>
+              <div class="label">Score</div>
+            </div>
+          </div>
+          <div class="score-summary">
+            <div class="pct" style={"color: #{color_hex(@performance_color)};"}>
+              {round(@percentage)}%
+            </div>
+            <div class="verdict" style={"color: #{color_hex(@performance_color)};"}>
+              {@performance_label}
+            </div>
+            <div class="sub">
+              Attempted {@correct + @wrong} of {@total_questions} questions · Total marks {@total_marks}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Score Breakdown</h3>
+        <div class="breakdown">
+          <div class="stat correct"><div class="num">{@correct}</div><div class="k">Correct</div></div>
+          <div class="stat wrong"><div class="num">{@wrong}</div><div class="k">Wrong</div></div>
+          <div class="stat skip"><div class="num">{@unanswered}</div><div class="k">Unanswered</div></div>
+          <div class="stat neg"><div class="num">{Float.round(@negative_marks, 2)}</div><div class="k">Negative</div></div>
+          <div class="stat final"><div class="num">{Float.round(@score, 1)}</div><div class="k">Final</div></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Performance Summary</h3>
+        <div class="bar-row">
+          <div class="meta-line">
+            <span class="label">Accuracy</span>
+            <span>{@correct}/{@correct + @wrong} correct ({round(@accuracy)}%)</span>
+          </div>
+          <div class="bar">
+            <span style={"width: #{Float.round(@accuracy, 1)}%; background: #{accuracy_bar_color(@accuracy)};"}></span>
+          </div>
+        </div>
+        <div class="bar-row">
+          <div class="meta-line">
+            <span class="label">Completion</span>
+            <span>{@correct + @wrong}/{@total_questions} attempted ({round(@completion)}%)</span>
+          </div>
+          <div class="bar">
+            <span style={"width: #{Float.round(@completion, 1)}%; background: #2563eb;"}></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Time Analysis</h3>
+        <table class="kv">
+          <tr>
+            <td class="key">Total Time Taken</td>
+            <td class="val">
+              {minutes(@time_taken)} min
+              <span :if={@assessment.duration_minutes}> of {@assessment.duration_minutes} min</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="key">Average Time per Question</td>
+            <td class="val">{@avg_time_per_question} min</td>
+          </tr>
+          <tr>
+            <td class="key">Questions</td>
+            <td class="val">{@total_questions}</td>
+          </tr>
+        </table>
+      </section>
+
+      <.report_footer generated_at_display={@generated_at_display} />
+    </div>
+  </body>
+</html>

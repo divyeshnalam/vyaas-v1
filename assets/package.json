@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@heroicons/react": "^2.2.0"
+  },
+  "devDependencies": {
+    "daisyui": "^5.1.9"
+  }
+}

@@ -1,0 +1,9 @@
+<!-- Extracted from VyaasaCampusWeb.Components.Student.CredentialsComponent.employability_card/1
+     (bottom-left wave, larger/lighter layer — used on both front and back).
+     Typst can't read .heex, so if that markup changes this file needs updating. -->
+<svg viewBox="0 0 121 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M14.6344 44.0494C13.4571 41.8561 -6.03801 1.54482 -6.62784 0.916476L-13.0173 0.000153188L-29.5663 104.969L110.247 125.835C115.985 126.568 129.362 126.023 110.712 110.276C92.0624 94.5295 83.3855 85.1868 56.2736 74.8863C29.1617 64.5857 15.8117 46.2427 14.6344 44.0494Z"
+    fill="#FEA337"
+  />
+</svg>

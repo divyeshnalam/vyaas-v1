@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Overall Leaderboard Report</title>
+    <style><%= raw(common_styles()) %></style>
+    <style>
+      @page { size: A4 landscape; margin: 10mm; }
+      table.leaderboard {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 8.5pt;
+      }
+      table.leaderboard thead th {
+        background: #f97316;
+        color: #ffffff;
+        padding: 6px 4px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 8pt;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+      table.leaderboard thead th.num { text-align: center; }
+      table.leaderboard tbody td {
+        padding: 5px 4px;
+        border-bottom: 1px solid #f3f4f6;
+        vertical-align: top;
+      }
+      table.leaderboard tbody td.num { text-align: center; }
+      table.leaderboard tbody tr:nth-child(even) { background: #fafafa; }
+      table.leaderboard tbody tr.top-1 { background: #fef9c3; }
+      table.leaderboard tbody tr.top-2 { background: #f3f4f6; }
+      table.leaderboard tbody tr.top-3 { background: #fef3c7; }
+      .rank-pill {
+        display: inline-block;
+        min-width: 22px;
+        padding: 2px 6px;
+        border-radius: 9999px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 8pt;
+      }
+      .rank-1 { background: #facc15; color: #713f12; }
+      .rank-2 { background: #cbd5e1; color: #0f172a; }
+      .rank-3 { background: #f59e0b; color: #ffffff; }
+      .rank-default { color: #6b7280; }
+      .name-cell .name {
+        font-weight: 600;
+        color: #111827;
+      }
+      .name-cell .id {
+        font-size: 7.5pt;
+        color: #9ca3af;
+        margin-top: 1px;
+      }
+      .ai8-score {
+        font-weight: 700;
+        color: #1d4ed8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="report">
+      <.report_watermark watermark_src={@watermark_src} />
+      <.report_header logo_src={@logo_src} student={@student} generated_at_display={@generated_at_display} />
+
+      <section class="title-block">
+        <div>
+          <h1>Overall Leaderboard</h1>
+          <p>{@subtitle}</p>
+        </div>
+        <span class="badge" style="background: #ffedd5; color: #ea580c;">
+          {@total} students
+        </span>
+      </section>
+
+      <section class="card">
+        <table class="leaderboard">
+          <thead>
+            <tr>
+              <th class="num">#</th>
+              <th>Student</th>
+              <th>Degree</th>
+              <th>Specialization</th>
+              <th class="num">Resume</th>
+              <th class="num">MCQ</th>
+              <th class="num">Behav.</th>
+              <th class="num">JAM</th>
+              <th class="num">Intrv.</th>
+              <th class="num">Psych.</th>
+              <th class="num">AI8</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr :for={r <- @rankers} class={rank_row_class(r.rank)}>
+              <td class="num">
+                <span class={"rank-pill #{rank_pill_class(r.rank)}"}>{r.rank}</span>
+              </td>
+              <td class="name-cell">
+                <div class="name">{r.name}</div>
+                <div class="id">{r.registration_id || "-"}</div>
+              </td>
+              <td>{r.degree || "-"}</td>
+              <td>{r.specialization || "-"}</td>
+              <td class="num">{format_score(r.ats_score)}</td>
+              <td class="num">{format_score(r.mcq_percentage)}</td>
+              <td class="num">{format_score(r.behavioral_score)}</td>
+              <td class="num">{format_score(r.jam_score)}</td>
+              <td class="num">{format_score(r.interview_score)}</td>
+              <td class="num">{format_score(r.psychometric_score)}</td>
+              <td class="num ai8-score">{r.ai8_score || "-"}</td>
+            </tr>
+            <tr :if={@rankers == []}>
+              <td colspan="11" style="text-align: center; color: #9ca3af; padding: 24px;">
+                No students match the selected filters.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <.report_footer generated_at_display={@generated_at_display} />
+    </div>
+  </body>
+</html>
