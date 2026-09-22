@@ -86,6 +86,14 @@ defmodule VyaasaCampus.Contexts.Psychometric do
     * `{:error, reason}`
   """
   def submit_answer(session_id, answer, tenant_schema) do
+    # Opik: scope this assessment's thread id around the (unchanged) body so the
+    # LLM follow-up call joins the session thread. Result passes through as-is.
+    VyaasaCampus.AI.Tracing.with_thread_id(session_id, fn ->
+      do_submit_answer(session_id, answer, tenant_schema)
+    end)
+  end
+
+  defp do_submit_answer(session_id, answer, tenant_schema) do
     case get_assessment_by_session(session_id, tenant_schema) do
       nil ->
         {:error, :not_found}
@@ -120,6 +128,14 @@ defmodule VyaasaCampus.Contexts.Psychometric do
   populates per-trait score columns, and marks the assessment completed.
   """
   def finalize_report(session_id, tenant_schema) do
+    # Opik: same scoped thread id for the report LLM call (also reached from
+    # force_complete in the finalizer job). Result passes through as-is.
+    VyaasaCampus.AI.Tracing.with_thread_id(session_id, fn ->
+      do_finalize_report(session_id, tenant_schema)
+    end)
+  end
+
+  defp do_finalize_report(session_id, tenant_schema) do
     case get_assessment_by_session(session_id, tenant_schema) do
       nil ->
         {:error, :not_found}

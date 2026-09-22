@@ -103,6 +103,14 @@ defmodule VyaasaCampus.Contexts.MiniProjectV4 do
   inside a Task from the LiveView.
   """
   def process_submission(%Session{} = session, artifacts, prefix) do
+    # Opik: scope the session's thread id around the (unchanged) body so the
+    # ceiling + viva-question LLM calls join the session thread.
+    VyaasaCampus.AI.Tracing.with_thread_id(session.id, fn ->
+      do_process_submission(session, artifacts, prefix)
+    end)
+  end
+
+  defp do_process_submission(session, artifacts, prefix) do
     summary = submission_summary(artifacts)
     scenario = session.chosen_scenario || %{}
 
@@ -149,6 +157,14 @@ defmodule VyaasaCampus.Contexts.MiniProjectV4 do
   Runs the two closing LLM calls; intended to run inside a Task.
   """
   def finalize(%Session{} = session, prefix) do
+    # Opik: same scoped thread id for the scoring + feedback LLM calls (also
+    # reached from force_complete in the finalizer job).
+    VyaasaCampus.AI.Tracing.with_thread_id(session.id, fn ->
+      do_finalize(session, prefix)
+    end)
+  end
+
+  defp do_finalize(session, prefix) do
     summary = submission_summary(session.artifacts)
     scenario = session.chosen_scenario || %{}
     qa_pairs = Enum.filter(session.viva_questions, &is_binary(&1["answer"]))
@@ -245,6 +261,9 @@ defmodule VyaasaCampus.Contexts.MiniProjectV4 do
         {:ok, :already_terminal}
 
       %{viva_questions: questions} = session ->
+        # Opik filter labels for the finalize trace (runs in the finalizer job, no LiveView).
+        VyaasaCampus.AI.Tracing.put_metadata(%{student_id: session.student_id, module: "mini_project", tenant: prefix})
+
         if Enum.any?(questions || [], &is_binary(&1["answer"])) do
           finalize(session, prefix)
         else

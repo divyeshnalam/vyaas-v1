@@ -523,9 +523,11 @@ defmodule VyaasaCampusWeb.Student.BehavioralLive do
           mime = Map.get(params, "mime_type", "audio/webm")
           filename = if String.contains?(mime, "webm"), do: "answer.webm", else: "answer.ogg"
           lv_pid = self()
+          # Opik: link the Whisper span to this session's thread (the Task has no thread id of its own).
+          thread_id = socket.assigns[:session_id]
 
           Task.Supervisor.start_child(VyaasaCampus.TaskSupervisor, fn ->
-            result = VyaasaCampus.AI.GroqClient.transcribe_audio(binary, filename: filename)
+            result = VyaasaCampus.AI.GroqClient.transcribe_audio(binary, filename: filename, thread_id: thread_id)
             send(lv_pid, {:transcription_ready, result})
           end)
 
@@ -696,7 +698,8 @@ defmodule VyaasaCampusWeb.Student.BehavioralLive do
       gen = (socket.assigns[:tts_gen] || 0) + 1
 
       Task.Supervisor.start_child(VyaasaCampus.TaskSupervisor, fn ->
-        case VyaasaCampus.AI.GroqClient.text_to_speech(tts_text) do
+        # Opik: link the TTS span to this session's thread.
+        case VyaasaCampus.AI.GroqClient.text_to_speech(tts_text, thread_id: session_id) do
           {:ok, audio_base64} -> send(tts_pid, {:tts_ready, gen, audio_base64})
           {:error, _} -> send(tts_pid, {:tts_fallback, gen, tts_text})
         end

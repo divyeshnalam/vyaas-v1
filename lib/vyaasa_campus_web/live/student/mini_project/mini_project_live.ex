@@ -155,6 +155,9 @@ defmodule VyaasaCampusWeb.Student.MiniProject.MiniProjectLive do
         messages = session.discovery_messages || []
 
         Task.async(fn ->
+          # Opik: tag this short-lived Task with the session's thread id.
+          VyaasaCampus.AI.Tracing.put_thread_id(session && session.id)
+
           case MiniProjectEngine.stakeholder_reply(scenario, question, messages) do
             {:ok, reply} -> send(lv, {:discovery_reply, question, reply})
             {:error, reason} -> send(lv, {:discovery_error, inspect(reason)})
@@ -171,6 +174,9 @@ defmodule VyaasaCampusWeb.Student.MiniProject.MiniProjectLive do
     session = socket.assigns.session
 
     Task.async(fn ->
+      # Opik: tag this short-lived Task with the session's thread id.
+      VyaasaCampus.AI.Tracing.put_thread_id(session && session.id)
+
       recap = MiniProjectEngine.discovery_recap(session.chosen_scenario, session.discovery_messages || [])
       {brief, submission_type} = MiniProjectEngine.generate_brief(session.chosen_scenario, recap)
       send(lv, {:brief_ready, recap, brief, submission_type})
@@ -284,6 +290,9 @@ defmodule VyaasaCampusWeb.Student.MiniProject.MiniProjectLive do
         answered_count = length(MPSession.answered_viva_turns(session))
 
         Task.async(fn ->
+          # Opik: tag this short-lived Task with the session's thread id.
+          VyaasaCampus.AI.Tracing.put_thread_id(session && session.id)
+
           score = MiniProjectEngine.score_viva_answer(pending["question"], pending["evidence"], answer)
 
           next_q =
@@ -329,6 +338,9 @@ defmodule VyaasaCampusWeb.Student.MiniProject.MiniProjectLive do
       }
 
       Task.async(fn ->
+        # Opik: tag this short-lived Task with the session's thread id.
+        VyaasaCampus.AI.Tracing.put_thread_id(session && session.id)
+
         case MiniProject.save_reflection(session, reflection_map, prefix) do
           {:ok, updated} ->
             eval =
@@ -517,6 +529,9 @@ defmodule VyaasaCampusWeb.Student.MiniProject.MiniProjectLive do
           "#{socket.assigns.current_user.first_name} #{socket.assigns.current_user.last_name}"
 
         Task.async(fn ->
+          # Opik: tag this short-lived Task with the session's thread id.
+          VyaasaCampus.AI.Tracing.put_thread_id(updated_session && updated_session.id)
+
           # Authenticity forensics (file metadata + repo + timing) — off-process
           # since it may hit pdfinfo and the GitHub API. Never blocks the viva.
           try do

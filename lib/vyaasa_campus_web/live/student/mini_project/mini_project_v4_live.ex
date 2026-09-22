@@ -120,7 +120,11 @@ defmodule VyaasaCampusWeb.Student.MiniProject.MiniProjectV4Live do
            socket.assigns.tenant_schema
          ) do
       {:ok, session} ->
-        async(socket, fn -> {:scenarios_ready, EngineV4.generate_scenarios(profile)} end)
+        async(socket, fn ->
+          # Opik: tag this short-lived Task with the new session's thread id.
+          VyaasaCampus.AI.Tracing.put_thread_id(session.id)
+          {:scenarios_ready, EngineV4.generate_scenarios(profile)}
+        end)
 
         {:noreply,
          socket
